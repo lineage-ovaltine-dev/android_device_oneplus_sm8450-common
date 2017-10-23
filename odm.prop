@@ -33,3 +33,6 @@ ro.vendor.oplus.radio.sar_regionmark=FCC
 
 # SVN
 ro.build.version.svn=43
+
+# b/67718369 temporarily disable privapp-permissions whitelist enforcement
+ro.control_privapp_permissions=disable
