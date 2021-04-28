@@ -138,16 +138,15 @@ PRODUCT_PACKAGES += \
     libgralloc.qti \
     libqdMetaData \
     libqdMetaData.system \
+    libqdutils \
     libsdmcore \
     libsdmutils \
     libtinyxml \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.15.vendor \
-    vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.config.vendor \
+    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
 PRODUCT_COPY_FILES += \
