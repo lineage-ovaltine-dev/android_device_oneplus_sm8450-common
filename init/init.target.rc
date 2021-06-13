@@ -93,7 +93,6 @@ on post-fs
 
 on late-fs
     wait_for_prop hwservicemanager.ready true
-    #exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.default --late
 
 on post-fs-data
