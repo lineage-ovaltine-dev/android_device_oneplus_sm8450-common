@@ -93,10 +93,7 @@ TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_oplus
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := \
-    androidboot.hardware=qcom \
-    androidboot.memcg=1 \
-    video=vfb:640x400,bpp=32,memsize=3072000 \
-    androidboot.usbcontroller=a600000.dwc3
+    video=vfb:640x400,bpp=32,memsize=3072000
 
 BOARD_BOOTCONFIG := \
     hardware=qcom \
