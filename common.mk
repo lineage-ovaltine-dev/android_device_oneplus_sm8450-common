@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
+    libgralloc.qti \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
