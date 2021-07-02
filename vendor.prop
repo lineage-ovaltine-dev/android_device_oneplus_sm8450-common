@@ -106,6 +106,7 @@ vendor.display.disable_sdr_dimming=1
 vendor.display.disable_stc_dimming=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
+vendor.display.enable_dpps_dynamic_fps=1
 vendor.display.enable_optimize_refresh=0
 vendor.display.enable_rounded_corner=1
 vendor.display.use_smooth_motion=1
