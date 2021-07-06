@@ -360,6 +360,12 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/oplus
 
+# Set GRF/Vendor freeze properties
+BOARD_SHIPPING_API_LEVEL := 31
+BOARD_API_LEVEL := 31
+SHIPPING_API_LEVEL := 31
+BOARD_SYSTEMSDK_VERSIONS := 31
+
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
