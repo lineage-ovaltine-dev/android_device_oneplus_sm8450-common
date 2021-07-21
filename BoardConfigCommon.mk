@@ -97,6 +97,7 @@ BOARD_KERNEL_CMDLINE := \
 
 BOARD_BOOTCONFIG := \
     hardware=qcom \
+    androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3
 
