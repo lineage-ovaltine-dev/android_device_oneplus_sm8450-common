@@ -103,6 +103,7 @@ vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_noise_layer=1
 vendor.display.disable_offline_rotator=1
 vendor.display.disable_sdr_dimming=1
+vendor.display.disable_sdr_histogram=1
 vendor.display.disable_stc_dimming=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
