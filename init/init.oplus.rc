@@ -67,6 +67,16 @@ service vendor.audioadsprpcd_audiopd /vendor/bin/audioadsprpcd audiopd
    group media
    setenv ADSP_LIBRARY_PATH ";/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp;/vendor/dsp;/odm/lib/rfsa/adsp;/vendor/lib/rfsa/adsp"
 
+# Radio
+on property:vendor.radio.multisim.config=*
+    setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
+
+service oplus-sh /odm/bin/init.oplus.sh
+    class late_start
+    user system
+    group system radio
+    oneshot
+
 service oplus_sensor_fb /odm/bin/oplus_sensor_fb
     user system
     group system
