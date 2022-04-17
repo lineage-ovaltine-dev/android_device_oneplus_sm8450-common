@@ -39,26 +39,26 @@ void vendor_load_properties() {
 
     switch (prjname) {
         // udon
-        case 22881: // IN
+        case 22881:  // IN
             OverrideProperty("ro.product.product.model", "CPH2487");
             break;
         // ovaltine
-        case 21841: // CN - ACE Pro
+        case 21841:  // CN - ACE Pro
             OverrideProperty("ro.product.product.model", "PGP110");
             break;
-        case 21842: // IN / EEA / NA - 10T
+        case 21842:  // IN / EEA / NA - 10T
             switch (region) {
-              case 1: // IN
-                  OverrideProperty("ro.product.product.model", "CPH2413");
-                  break;
-              case 2: // EEA
-                  OverrideProperty("ro.product.product.model", "CPH2415");
-                  break;
-              case 3: // NA
-                  OverrideProperty("ro.product.product.model", "CPH2417");
-                  break;
-              default:
-                  LOG(ERROR) << "Unexpected project name: " << prjname;
+                case 1:  // IN
+                    OverrideProperty("ro.product.product.model", "CPH2413");
+                    break;
+                case 2:  // EEA
+                    OverrideProperty("ro.product.product.model", "CPH2415");
+                    break;
+                case 3:  // NA
+                    OverrideProperty("ro.product.product.model", "CPH2417");
+                    break;
+                default:
+                    LOG(ERROR) << "Unexpected project name: " << prjname;
             }
             break;
         default:
