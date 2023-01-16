@@ -172,6 +172,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.vendor_ramdisk \
+    fstab.zram \
     init.class_main.sh \
     init.kernel.post_boot.sh \
     init.oplus.hw.rc \

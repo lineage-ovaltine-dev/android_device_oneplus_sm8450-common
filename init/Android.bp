@@ -17,6 +17,12 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.hw.rc",
     src: "init.oplus.hw.rc",
     sub_dir: "init",
