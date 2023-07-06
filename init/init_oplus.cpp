@@ -35,67 +35,13 @@ void OverrideProperty(const char* name, const char* value) {
 void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
-    auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
 
     switch (prjname) {
-        // lunaa
-        case 21603: // CN
-            OverrideProperty("ro.product.product.model", "RMX3361");
-            break;
-        case 21675: // IN
-            OverrideProperty("ro.product.product.model", "RMX3360");
-            break;
-        case 21676: // EU
-            OverrideProperty("ro.product.product.model", "RMX3363");
-            break;
-        // martini
-        case 20820: // CN
-            OverrideProperty("ro.product.product.model", "MT2110");
-            break;
-        case 20821: // IN
-            OverrideProperty("ro.product.product.model", "MT2111");
+        // udon
+        case 22881: // IN
+            OverrideProperty("ro.product.product.model", "CPH2487");
             break;
         default:
             LOG(ERROR) << "Unexpected project name: " << prjname;
-    }
-
-    switch (rf_version) {
-        case 11: // CN
-            if (device == "OnePlus9") {
-                OverrideProperty("ro.product.product.model", "LE2110");
-            } else if (device == "OnePlus9Pro") {
-                OverrideProperty("ro.product.product.model", "LE2120");
-            }
-            break;
-        case 12: // TMO
-            if (device == "OnePlus9") {
-                OverrideProperty("ro.product.product.model", "LE2117");
-            } else if (device == "OnePlus9Pro") {
-                OverrideProperty("ro.product.product.model", "LE2127");
-            }
-            break;
-        case 13: // IN
-            if (device == "OnePlus9") {
-                OverrideProperty("ro.product.product.model", "LE2111");
-            } else if (device == "OnePlus9Pro") {
-                OverrideProperty("ro.product.product.model", "LE2121");
-            }
-            break;
-        case 21: // EU
-            if (device == "OnePlus9") {
-                OverrideProperty("ro.product.product.model", "LE2113");
-            } else if (device == "OnePlus9Pro") {
-                OverrideProperty("ro.product.product.model", "LE2123");
-            }
-            break;
-        case 22: // NA
-            if (device == "OnePlus9") {
-                OverrideProperty("ro.product.product.model", "LE2115");
-            } else if (device == "OnePlus9Pro") {
-                OverrideProperty("ro.product.product.model", "LE2125");
-            }
-            break;
-        default:
-            LOG(ERROR) << "Unexpected RF version: " << rf_version;
     }
 }
