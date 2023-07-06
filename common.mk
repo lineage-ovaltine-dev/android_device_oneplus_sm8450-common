@@ -60,8 +60,7 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libssrec \
     libstdc++.vendor \
-    libvolumelistener \
-    sound_trigger.primary.lahaina:32
+    libvolumelistener
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio
 QCV_FAMILY_SKUS := taro cape
