@@ -304,15 +304,7 @@ tcpc_class.ko
 rt-regmap.ko
 repeater.ko
 repeater-i2c-eusb2.ko
-synaptics_tcm2.ko
-oplus_bsp_tp_custom.ko
-oplus_bsp_tp_comon.ko
 oplus_bsp_tp_notify.ko
-oplus_bsp_tp_tcm_oncell.ko
-oplus_bsp_tp_tcm_S3910.ko
-oplus_bsp_tp_syna_comnon.ko
-oplus_bsp_tp_ft3658u.ko
-oplus_bsp_tp_focal_common.ko
 pm8941-pwrkey.ko
 qcom-hv-haptics.ko
 oplus_fp_common.ko
