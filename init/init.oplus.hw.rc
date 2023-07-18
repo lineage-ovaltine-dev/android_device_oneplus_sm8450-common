@@ -52,3 +52,7 @@ on property:ro.boot.prjname=20849
 
 on property:ro.boot.prjname=2084A
     setprop ro.boot.hardware.revision "TMO"
+
+# udon
+on property:ro.boot.prjname=22881
+    setprop ro.boot.hardware.revision "IN"
