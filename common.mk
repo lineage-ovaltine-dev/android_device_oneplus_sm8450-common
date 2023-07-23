@@ -415,7 +415,8 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/oplus
+    hardware/oplus \
+    kernel/oneplus/sm8450
 
 # Set GRF/Vendor freeze properties
 BOARD_SHIPPING_API_LEVEL := 31
