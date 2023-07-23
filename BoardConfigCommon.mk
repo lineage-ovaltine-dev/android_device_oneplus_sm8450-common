@@ -114,7 +114,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8450
-TARGET_KERNEL_CONFIG := gki_defconfig vendor/waipio_GKI.config
+TARGET_KERNEL_CONFIG := gki_defconfig vendor/waipio_GKI.config vendor/oplus/waipio_GKI.config
 TARGET_KERNEL_NO_GCC := true
 
 # Kernel modules
