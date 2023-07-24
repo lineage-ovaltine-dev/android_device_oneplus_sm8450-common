@@ -22,6 +22,10 @@ vendor.media.vpp.enable=0
 vendor.media.vpp.osie.enable=0
 vendor.media.vpp.sr.enable=0
 
+# OnePlus
+persist.sys.oplus.region=EU
+ro.vendor.oplus.version=pu
+
 # Radio
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.poweron_opt=1
