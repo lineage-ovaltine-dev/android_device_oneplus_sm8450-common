@@ -15,7 +15,7 @@ int main() {
 
     std::string instance = std::string() + ALSHelper::descriptor + "/default";
     binder_status_t status =
-        AServiceManager_addService(alsHelper->asBinder().get(), instance.c_str());
+            AServiceManager_addService(alsHelper->asBinder().get(), instance.c_str());
     CHECK_EQ(status, STATUS_OK);
 
     instance = std::string() + UdfpsHelper::descriptor + "/default";

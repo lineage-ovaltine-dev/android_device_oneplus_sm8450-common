@@ -18,17 +18,17 @@
 
 #include <android-base/logging.h>
 #include <android/binder_ibinder.h>
-#include "UdfpsHelper.h"
 #include <utils/Errors.h>
+#include "UdfpsHelper.h"
 
 namespace aidl::vendor::chen::aidl::syshelper {
 
 std::unique_ptr<LinkedCallback> LinkedCallback::Make(
-    std::shared_ptr<UdfpsHelper> service, std::shared_ptr<IUdfpsHelperCallback> callback) {
+        std::shared_ptr<UdfpsHelper> service, std::shared_ptr<IUdfpsHelperCallback> callback) {
     std::unique_ptr<LinkedCallback> ret(new LinkedCallback());
     binder_status_t linkRet =
-        AIBinder_linkToDeath(callback->asBinder().get(), service->death_recipient_.get(),
-                             reinterpret_cast<void*>(ret.get()));
+            AIBinder_linkToDeath(callback->asBinder().get(), service->death_recipient_.get(),
+                                 reinterpret_cast<void*>(ret.get()));
     if (linkRet != ::STATUS_OK) {
         LOG(WARNING) << __func__ << "Cannot link to death: " << linkRet;
         return nullptr;
@@ -45,8 +45,8 @@ LinkedCallback::~LinkedCallback() {
         return;
     }
     auto status =
-        AIBinder_unlinkToDeath(callback_->asBinder().get(), service()->death_recipient_.get(),
-                               reinterpret_cast<void*>(this));
+            AIBinder_unlinkToDeath(callback_->asBinder().get(), service()->death_recipient_.get(),
+                                   reinterpret_cast<void*>(this));
     if (status != STATUS_OK && status != STATUS_DEAD_OBJECT) {
         LOG(WARNING) << __func__ << "Cannot unlink to death: " << ::android::statusToString(status);
     }

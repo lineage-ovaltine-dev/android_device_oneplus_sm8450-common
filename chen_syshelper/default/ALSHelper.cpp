@@ -7,7 +7,8 @@ namespace chen {
 namespace aidl {
 namespace syshelper {
 
-::ndk::ScopedAStatus ALSHelper::takeScreenShot(::aidl::vendor::chen::aidl::syshelper::ScreenShotInfo* _aidl_return) {
+::ndk::ScopedAStatus ALSHelper::takeScreenShot(
+        ::aidl::vendor::chen::aidl::syshelper::ScreenShotInfo* _aidl_return) {
     LOG(VERBOSE) << "in takeScreenShot";
     if (callback_ == nullptr) {
         return ndk::ScopedAStatus::fromExceptionCode(EX_NULL_POINTER);

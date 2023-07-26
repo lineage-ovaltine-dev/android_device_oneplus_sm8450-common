@@ -103,4 +103,15 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.chen.aidl.syshelper</name>
+        <interface>
+            <name>IUdfpsHelper</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IALSHelper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

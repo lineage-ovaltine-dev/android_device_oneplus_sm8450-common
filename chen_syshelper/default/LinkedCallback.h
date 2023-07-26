@@ -34,18 +34,18 @@ class LinkedCallback {
     // service->death_reciepient() should be from CreateDeathRecipient().
     // Not using a strong reference to |service| to avoid circular reference. The lifetime
     // of |service| must be longer than this LinkedCallback object.
-   static std::unique_ptr<LinkedCallback> Make(std::shared_ptr<UdfpsHelper> service,
-                                               std::shared_ptr<IUdfpsHelperCallback> callback);
+    static std::unique_ptr<LinkedCallback> Make(std::shared_ptr<UdfpsHelper> service,
+                                                std::shared_ptr<IUdfpsHelperCallback> callback);
 
-   // Automatically unlinkToDeath upon destruction. So, it is always safe to reinterpret_cast
-   // the cookie back to the LinkedCallback object.
-   ~LinkedCallback();
+    // Automatically unlinkToDeath upon destruction. So, it is always safe to reinterpret_cast
+    // the cookie back to the LinkedCallback object.
+    ~LinkedCallback();
 
-   // The wrapped IUdfpsHelperCallback object.
-   const std::shared_ptr<IUdfpsHelperCallback>& callback() const { return callback_; }
+    // The wrapped IUdfpsHelperCallback object.
+    const std::shared_ptr<IUdfpsHelperCallback>& callback() const { return callback_; }
 
-   // On callback died, unreigster it from the service.
-   void OnCallbackDied();
+    // On callback died, unreigster it from the service.
+    void OnCallbackDied();
 
   private:
     LinkedCallback();

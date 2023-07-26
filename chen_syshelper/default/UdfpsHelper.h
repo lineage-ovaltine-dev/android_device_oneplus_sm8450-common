@@ -7,9 +7,9 @@
 // #include <aidl/vendor/chen/aidl/syshelper/IUdfpsHelper.h>
 #include <aidl/vendor/chen/aidl/syshelper/IUdfpsHelperCallback.h>
 
+#include <condition_variable>
 #include <mutex>
 #include <thread>
-#include <condition_variable>
 
 namespace aidl {
 namespace vendor {
@@ -20,15 +20,19 @@ namespace syshelper {
 class LinkedCallback;
 
 class UdfpsHelper : public BnUdfpsHelper {
-   public:
+  public:
     UdfpsHelper();
     ::ndk::ScopedAStatus touchDown() override;
     ::ndk::ScopedAStatus touchUp() override;
-    ::ndk::ScopedAStatus getTouchStatus(bool *aidl_return) override;
-    ::ndk::ScopedAStatus registerCallback(const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>& in_callback) override;
-    ::ndk::ScopedAStatus unregisterCallback(const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>& in_callback) override;
+    ::ndk::ScopedAStatus getTouchStatus(bool* aidl_return) override;
+    ::ndk::ScopedAStatus registerCallback(
+            const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>&
+                    in_callback) override;
+    ::ndk::ScopedAStatus unregisterCallback(
+            const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>&
+                    in_callback) override;
 
-   private:
+  private:
     friend LinkedCallback;  // for exposing death_recipient_
 
     static void startThread(UdfpsHelper* helper);

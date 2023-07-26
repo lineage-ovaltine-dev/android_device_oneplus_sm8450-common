@@ -86,11 +86,8 @@ void UdfpsHelper::run() {
 
     while (true) {
         if (!currentIsDownState) {
-            mWaitCV.wait(runLock, [&] {
-                return currentIsDownState;
-            });
-        }
-        else {
+            mWaitCV.wait(runLock, [&] { return currentIsDownState; });
+        } else {
             sleep(3);
             if (currentIsDownState) {
                 LOG(WARNING) << "FP Force Touch up because down time is larger than 3s!";
@@ -104,7 +101,9 @@ void UdfpsHelper::startThread(UdfpsHelper* helper) {
     helper->run();
 }
 
-::ndk::ScopedAStatus UdfpsHelper::registerCallback(const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>& callback) {
+::ndk::ScopedAStatus UdfpsHelper::registerCallback(
+        const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>&
+                callback) {
     if (callback == nullptr) {
         // For now, this shouldn't happen because argument is not nullable.
         return ndk::ScopedAStatus::fromExceptionCode(EX_NULL_POINTER);
@@ -116,7 +115,8 @@ void UdfpsHelper::startThread(UdfpsHelper* helper) {
         // unlock
     }
 
-    if (auto res = callback->onUdfpsTouchStatusChanged(currentIsDownState); IsDeadObjectLogged(res)) {
+    if (auto res = callback->onUdfpsTouchStatusChanged(currentIsDownState);
+        IsDeadObjectLogged(res)) {
         LOG(ERROR) << "register Callback is Dead Object, remove!";
         (void)unregisterCallback(callback);
     }
@@ -124,7 +124,9 @@ void UdfpsHelper::startThread(UdfpsHelper* helper) {
     return ndk::ScopedAStatus::ok();
 }
 
-::ndk::ScopedAStatus UdfpsHelper::unregisterCallback(const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>& in_callback) {
+::ndk::ScopedAStatus UdfpsHelper::unregisterCallback(
+        const std::shared_ptr<::aidl::vendor::chen::aidl::syshelper::IUdfpsHelperCallback>&
+                in_callback) {
     if (in_callback == nullptr) {
         // For now, this shouldn't happen because argument is not nullable.
         return ndk::ScopedAStatus::fromExceptionCode(EX_NULL_POINTER);
