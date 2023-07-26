@@ -386,10 +386,13 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.multihal \
+    android.hardware.sensors@2.1-service.oplus_OP4A89 \
     libsensorndkbridge \
     sensors.dynamic_sensor_hal \
-    sensors.oplus
+    sensors.oplus \
+    vendor.chen.aidl.syshelper-service \
+    sensors.chen.virt \
+    als_correction_service.oppo_OP4A89
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
