@@ -47,9 +47,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
-    agmcap \
-    agmcompressplay \
-    agmplay \
     audio.bluetooth.default \
     audio.primary.taro \
     audio.r_submix.default \
