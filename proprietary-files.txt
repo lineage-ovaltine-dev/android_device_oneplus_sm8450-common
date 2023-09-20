@@ -2,38 +2,16 @@
 ## are from OnePlus 10T (CPH2417_13.1.0.584(EX01)).
 
 # ACDBs
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
-vendor/etc/acdbdata/IDP_UPD_diwali/IDP_UPD_diwali_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD_diwali/IDP_UPD_diwali_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_idp/IDP_diwali_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_idp/IDP_diwali_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_idp_sku1/IDP_diwali_sku1_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_idp_sku1/IDP_diwali_sku1_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_parrot_qrd/QRD_diwali_parrot_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_parrot_qrd/QRD_diwali_parrot_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_qrd/QRD_diwali_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_qrd/QRD_diwali_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_qrd_sku1/QRD_diwali_sku1_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_qrd_sku1/QRD_diwali_sku1_workspaceFileXml.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/ukee_cdp/CDP_ukee_acdb_cal.acdb
-vendor/etc/acdbdata/ukee_cdp/CDP_ukee_workspaceFileXml.qwsp
 vendor/etc/acdbdata/ukee_mtp/MTP_ukee_acdb_cal.acdb
 vendor/etc/acdbdata/ukee_mtp/MTP_ukee_workspaceFileXml.qwsp
-vendor/etc/acdbdata/ukee_qrd/QRD_ukee_acdb_cal.acdb
-vendor/etc/acdbdata/ukee_qrd/QRD_ukee_workspaceFileXml.qwsp
-vendor/etc/acdbdata/waipio_cdp/CDP_acdb_cal.acdb
-vendor/etc/acdbdata/waipio_cdp/CDP_workspaceFileXml.qwsp
 vendor/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb
 vendor/etc/acdbdata/waipio_mtp/MTP_workspaceFileXml.qwsp
-vendor/etc/acdbdata/waipio_qrd/QRD_acdb_cal.acdb
-vendor/etc/acdbdata/waipio_qrd/QRD_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
@@ -394,38 +372,6 @@ vendor/lib64/vendor.display.PanelChaplin@1.0.so
 vendor/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
-# Display (Pixelworks)
-odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
-odm/bin/irisConfig
-odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.display@1.2.xml
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
-odm/lib64/hw/vendor.pixelworks.hardware.display@1.0-impl-1.2.so
-odm/lib64/libpwirisIoctlWrapper.so
-odm/lib64/libpwirisPCS.so
-odm/lib64/libpwiriscalibrate.so
-odm/lib64/libpwirisfeature.so
-odm/lib64/libpwirishalwrapper.so
-odm/lib64/libpwirispq.so
-odm/lib64/libpwirisservice.so
-odm/lib64/libpwirissoft.so
-odm/lib64/libpwsoftirisPCS.so
-odm/lib64/libsnapdragoncolor-pxlw.so
-odm/lib64/vendor.pixelworks.hardware.display@1.0.so
-odm/lib64/vendor.pixelworks.hardware.display@1.1.so
-odm/lib64/vendor.pixelworks.hardware.display@1.2.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
-vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libpwirisfeature.so
-vendor/lib64/libpwirishalwrapper.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.2.so
-vendor/lib64/vendor.pixelworks.hardware.feature-V1-ndk_platform.so
-vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so
-
 # Display (SDM)
 vendor/etc/display/DPU660.xml
 vendor/etc/display/DPU670.xml
@@ -760,7 +706,7 @@ vendor/lib64/libqtikeymint.so
 odm/etc/media_codecs_c2.xml
 odm/etc/media_codecs_c2_dolby_audio.xml
 odm/etc/media_codecs_ffmpeg.xml
-odm/etc/media_codecs_odm.xml
+odm/etc/media_codecs_vendor_oplus.xml
 odm/etc/media_profiles_V1_0.xml
 odm/lib64/libaiboost_qnn_sr.so
 odm/lib64/libaiboost_sr.so
@@ -1248,7 +1194,6 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
-vendor/lib64/hw/sensors.dynamic_sensor_hal.so
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/libcwb_client_vendor.so
 vendor/lib64/libsensorcal.so
@@ -1265,28 +1210,11 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors config
-vendor/etc/sensors/config/cape_qrd_lsm6dst_0.json
-vendor/etc/sensors/config/diwali_ak991x_0.json
-vendor/etc/sensors/config/diwali_bu52053nvx_0.json
 vendor/etc/sensors/config/diwali_default_sensors.json
 vendor/etc/sensors/config/diwali_dynamic_sensors.json
-vendor/etc/sensors/config/diwali_hdk_ak991x_0.json
-vendor/etc/sensors/config/diwali_hdk_lps22hh_0.json
-vendor/etc/sensors/config/diwali_hdk_lsm6dst_0.json
-vendor/etc/sensors/config/diwali_hdk_lsm6dst_1.json
-vendor/etc/sensors/config/diwali_hdk_tmd3702_0.json
 vendor/etc/sensors/config/diwali_irq.json
-vendor/etc/sensors/config/diwali_lps22hh_0.json
-vendor/etc/sensors/config/diwali_lsm6dst_0.json
-vendor/etc/sensors/config/diwali_lsm6dst_1.json
-vendor/etc/sensors/config/diwali_mtp_ak991x_0.json
-vendor/etc/sensors/config/diwali_mtp_lsm6dst_0.json
-vendor/etc/sensors/config/diwali_mtp_lsm6dst_1.json
 vendor/etc/sensors/config/diwali_power_0.json
 vendor/etc/sensors/config/diwali_qrd_dynamic_sensors.json
-vendor/etc/sensors/config/diwali_qrd_lps22hh_0.json
-vendor/etc/sensors/config/diwali_qrd_sx932x_0.json
-vendor/etc/sensors/config/diwali_qrd_tmd3702_0.json
 vendor/etc/sensors/config/qsh_camera.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
@@ -1358,6 +1286,7 @@ vendor/etc/sensors/config/waipio_default_sensors.json
 vendor/etc/sensors/config/waipio_dynamic_sensors.json
 vendor/etc/sensors/config/waipio_irq.json
 vendor/etc/sensors/config/waipio_power_0.json
+vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
 # Snapdragon Computer Vision Engine
