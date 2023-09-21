@@ -83,10 +83,7 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 ro.bluetooth.a2dp_offload.supported=true
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
-
-# Crypto
-ro.crypto.uses_fs_ioc_add_encryption_key=true
+ro.soc.manufacturer=QTI
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
