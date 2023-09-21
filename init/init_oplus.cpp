@@ -41,6 +41,10 @@ void vendor_load_properties() {
         case 22881: // IN
             OverrideProperty("ro.product.product.model", "CPH2487");
             break;
+        // ovaltine
+        case 21842: // NA
+            OverrideProperty("ro.product.product.model", "CPH2417");
+            break;
         default:
             LOG(ERROR) << "Unexpected project name: " << prjname;
     }
