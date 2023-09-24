@@ -108,6 +108,12 @@ vendor/lib/rfsa/adsp/libtracker_6dof_skel_8350.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
+# Audio Dolby
+odm/lib64/libdapparamstorage_sp.so
+odm/lib64/libdlbdsservice_sp.so
+odm/lib64/libdlbpreg_sp.so
+odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so
+
 # Audio graph manager
 vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
 vendor/bin/agmcap
@@ -1472,6 +1478,7 @@ system_ext/lib64/libwfdnative.so
 system_ext/lib64/libwfdrtsp.so
 system_ext/lib64/libwfdservice.so
 system_ext/lib64/libwfdsinksm.so
+system_ext/lib64/libwfduibcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 system_ext/priv-app/WfdService/WfdService.apk
 
