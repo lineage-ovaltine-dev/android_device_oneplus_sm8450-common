@@ -316,11 +316,6 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
-# Display (CWB)
-odm/etc/vintf/manifest/manifest_oplus_cwb.xml
-vendor/lib64/libcwb_qcom.so
-vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
-
 # Display (Features)
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
@@ -329,25 +324,12 @@ vendor/etc/Oplus_QC_LTM_SM7475_2023_02_01.pfm
 vendor/etc/Oplus_QC_LTM_SM8450_2021_10_12.pfm
 vendor/etc/Oplus_QC_LTM_SM8475_2022_05_10.pfm
 vendor/etc/Oplus_QC_LTM_SM8475_2022_07_05.pfm
-
-# Display
-odm/lib64/android.hardware.common-V2-ndk_platform.so
-vendor/bin/hw/vendor.qti.hardware.display.allocator-service
-vendor/bin/init.qti.display_boot.sh
-vendor/etc/init/init.qti.display_boot.rc
-vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
-vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
-vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
-vendor/lib64/libdisplaydebug.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libqservice.so
+vendor/etc/vintf/manifest/manifest_panelchaplin.xml
+vendor/lib64/libPanelChaplin.so
+vendor/lib64/vendor.display.PanelChaplin@1.0.so
+vendor/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so
 
 # Display HDR
-vendor/lib64/libgame_enhance.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdrdynamicootf.so
@@ -356,15 +338,16 @@ vendor/lib64/libhdr_stub.so
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
+odm/etc/vintf/manifest/manifest_oplus_cwb.xml
+odm/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
-vendor/etc/vintf/manifest/manifest_panelchaplin.xml
 vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libPanelChaplin.so
-vendor/lib64/libbacklight-calib.so
-vendor/lib64/libdigital-dimming.so
+vendor/lib64/libcwb_qcom.so
+vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdpps.so
+vendor/lib64/libgame_enhance.so
 vendor/lib64/libhistogram.so
 vendor/lib64/libmemutils.so
 vendor/lib64/libqdcm-algo.so
@@ -375,8 +358,7 @@ vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
-vendor/lib64/vendor.display.PanelChaplin@1.0.so
-vendor/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so
+vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (Pixelworks)
@@ -407,9 +389,12 @@ vendor/etc/display/DPU8__.xml
 vendor/etc/display/DPU9__.xml
 vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/display/thermallevel_to_fps.xml
-vendor/lib/libtinyxml2_1.so
+vendor/lib64/libbacklight-calib.so
+vendor/lib64/libdigital-dimming.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/libqrtrclient.so
 vendor/lib64/libqseed3.so
 vendor/lib64/librcmask.so
 vendor/lib64/libsdedrm.so
@@ -1521,3 +1506,6 @@ vendor/lib64/libwfdutils_proprietary.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# tmp
+
