@@ -15,7 +15,6 @@ vendor/etc/acdbdata/waipio_mtp/MTP_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/audioadsprpcd
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
@@ -115,15 +114,10 @@ odm/lib64/libdlbpreg_sp.so
 odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so
 
 # Audio graph manager
-vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
-vendor/bin/cplay
-vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
 -vendor/lib/libagm.so
 -vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so
 -vendor/lib64/libagm.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 
 # Audio-libraries
 -vendor/lib/libar-pal.so
@@ -159,15 +153,12 @@ vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
 vendor/lib64/libqtigefar.so
-vendor/lib64/libsndcardparser.so
 vendor/lib64/libtfa98xx.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Audio Listen
-vendor/etc/vintf/manifest/manifest_non_qmaa.xml
-vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
 vendor/lib64/hw/sound_trigger.primary.taro.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
@@ -689,7 +680,6 @@ vendor/lib64/libspcom.so
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
-vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libqtikeymint.so
 
@@ -1119,7 +1109,6 @@ vendor/lib64/libqdpr.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqrtrclient.so
 vendor/lib64/libqsocket.so
-vendor/lib64/libqti_vndfwk_detect_vendor.so
 vendor/lib64/libril-db.so
 vendor/lib64/libril-legacy.so
 vendor/lib64/libril-qc-ltedirectdisc.so

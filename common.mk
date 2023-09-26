@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     libbatterylistener \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libsndcardparser \
     libstdc++.vendor \
     libtinycompress \
     libvolumelistener \
@@ -260,6 +261,9 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor
 
 # Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.xml \
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
