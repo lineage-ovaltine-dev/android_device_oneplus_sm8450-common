@@ -306,7 +306,6 @@ vendor/lib64/vendor.display.PanelChaplin@1.0.so
 vendor/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so
 
 # Display HDR
-vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libhdrdynamic.so
