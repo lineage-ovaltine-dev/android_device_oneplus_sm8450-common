@@ -35,6 +35,7 @@ void OverrideProperty(const char* name, const char* value) {
 void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
+    auto region = std::stoi(GetProperty("ro.boot.hw_region_id", "0"));
 
     switch (prjname) {
         // udon
@@ -42,8 +43,23 @@ void vendor_load_properties() {
             OverrideProperty("ro.product.product.model", "CPH2487");
             break;
         // ovaltine
-        case 21842: // NA
-            OverrideProperty("ro.product.product.model", "CPH2417");
+        case 21841: // CN - ACE Pro
+            OverrideProperty("ro.product.product.model", "PGP110");
+            break;
+        case 21842: // IN / EEA / NA - 10T
+            switch (region) {
+              case 1: // IN
+                  OverrideProperty("ro.product.product.model", "CPH2413");
+                  break;
+              case 2: // EEA
+                  OverrideProperty("ro.product.product.model", "CPH2415");
+                  break;
+              case 3: // NA
+                  OverrideProperty("ro.product.product.model", "CPH2417");
+                  break;
+              default:
+                  LOG(ERROR) << "Unexpected project name: " << prjname;
+            }
             break;
         default:
             LOG(ERROR) << "Unexpected project name: " << prjname;
