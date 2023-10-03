@@ -6535,22 +6535,24 @@
         </string-array>
     </carrier_config>
     <carrier_config operator="T-Mobile">
-        <string-array name="mccmnc" num="15">
-            <item value="310260" />
-            <item value="310270" />
-            <item value="310240" />
+        <string-array name="mccmnc" num="17">
             <item value="310160" />
             <item value="310200" />
             <item value="310210" />
             <item value="310220" />
             <item value="310230" />
+            <item value="310240" />
             <item value="310250" />
-            <item value="31026" />
-            <item value="31031" />
+            <item value="310260" />
+            <item value="310270" />
             <item value="310310" />
             <item value="310490" />
             <item value="310660" />
             <item value="310800" />
+            <item value="311490" />
+            <item value="311660" />
+            <item value="311882" />
+            <item value="312250" />
         </string-array>
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
