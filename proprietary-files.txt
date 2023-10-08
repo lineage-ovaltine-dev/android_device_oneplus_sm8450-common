@@ -1301,6 +1301,12 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
+# Touch
+odm/bin/hw/vendor-oplus-hardware-touch-V1-service
+odm/etc/init/vendor-oplus-hardware-touch-V1-service.rc
+odm/etc/permissions/vendor-oplus-hardware-touch-V1.xml
+odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
+
 # Touchscreen firmware
 odm/firmware/tp/22803/FW_S3910_TIANMA.img
 odm/firmware/tp/22803/FW_S3910_TIANMA_FAE.img
