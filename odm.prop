@@ -33,3 +33,6 @@ ro.vendor.oplus.radio.sar_regionmark=FCC
 
 # SVN
 ro.build.version.svn=43
+
+# DNM
+ro.control_privapp_permissions=disable

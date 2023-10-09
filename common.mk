@@ -389,7 +389,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.oplus_OP4A89 \
     libsensorndkbridge \
     sensors.dynamic_sensor_hal \
-    sensors.oplus \
     vendor.chen.aidl.syshelper-service \
     sensors.chen.virt \
     als_correction_service.oppo_OP4A89
