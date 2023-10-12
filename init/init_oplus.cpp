@@ -10,6 +10,7 @@
 #include <sys/_system_properties.h>
 
 using android::base::GetProperty;
+#include "init_oplus.h"
 
 /*
  * SetProperty does not allow updating read only properties and as a result
@@ -27,6 +28,27 @@ void OverrideProperty(const char* name, const char* value) {
     }
 }
 
+void load_props(int i, int j) {
+    const auto OverrideRoProperty = [](const char* source, const char* prop, const char* value,
+                                       bool product) {
+        std::string PropertyName = "ro.";
+
+        if (product) PropertyName += "product.";
+        if (source != nullptr) PropertyName += source;
+        if (!product) PropertyName += "build.";
+        PropertyName += prop;
+
+        OverrideProperty(PropertyName.c_str(), value);
+    };
+
+    for (const auto& source : RO_PROP_SOURCES) {
+        OverrideRoProperty(source, "model", MODELS[i], true);
+        OverrideRoProperty(source, "name", MODELS[i], true);
+        OverrideRoProperty(source, "fingerprint", BUILD_FINGERPRINT[i], false);
+    }
+    OverrideRoProperty(nullptr, "product", MODELS[i], false);
+}
+
 /*
  * Only for read-only properties. Properties that can be wrote to more
  * than once should be set in a typical init script (e.g. init.oplus.hw.rc)
@@ -36,6 +58,7 @@ void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
+    auto region = std::stoi(GetProperty("ro.boot.hw_region_id", "0"));
 
     switch (prjname) {
         // lunaa
@@ -71,6 +94,27 @@ void vendor_load_properties() {
         //case 2084A: // TMO
         //    OverrideProperty("ro.product.product.model", "NE2217");
         //    break;
+        // udon
+        case 22881:  // IN
+            OverrideProperty("ro.product.product.model", "CPH2487");
+            break;
+        // ovaltine
+        case 21841:  // CN - ACE Pro
+            load_props(4, 0);
+            break;
+        case 21842:  // IN / EEA / NA - 10T
+            switch (region) {
+                case 1:  // IN
+                    load_props(0, 1);
+                    break;
+                case 2:  // EEA
+                    load_props(1, 1);
+                    break;
+                case 3:  // NA
+                    load_props(2, 1);
+                    break;
+            }
+            break;
         default:
             LOG(ERROR) << "Unexpected project name: " << prjname;
     }
