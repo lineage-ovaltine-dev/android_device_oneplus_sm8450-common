@@ -84,8 +84,6 @@ oplus_bsp_sensor_feedback.ko
 boot_mode.ko
 oplus_mm_kevent.ko
 oplus_mm_kevent_fb.ko
-oplus_bsp_ir_core.ko
-oplus_bsp_kookong_ir_spi.ko
 qcom_pm8008-regulator.ko
 qpnp-amoled-regulator.ko
 hvc_gunyah.ko
