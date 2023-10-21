@@ -107,7 +107,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.stats-V1-ndk_platform \
+    android.frameworks.stats-V1-ndk_platform.vendor \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device-V1-ndk.vendor \
     android.hardware.camera.metadata-V1-ndk.vendor \
@@ -408,6 +408,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.1-service.multihal \
     libsensorndkbridge \
     sensors.dynamic_sensor_hal \
