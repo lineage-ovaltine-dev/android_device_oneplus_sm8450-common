@@ -91,11 +91,6 @@ qcom_iommu_debug.ko
 lt9611uxc.ko
 msm_kgsl.ko
 oplus_bsp_fw_update.ko
-oplus_bsp_ist_up.ko
-oplus_bsp_ist_down.ko
-oplus_bsp_mxm_up.ko
-oplus_bsp_mxm_down.ko
-oplus_bsp_tri_key.ko
 hdcp_qseecom.ko
 qseecom-mod.ko
 cs_press_f71.ko
