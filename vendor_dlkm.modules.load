@@ -85,7 +85,7 @@ rdbg.ko
 lt9611uxc.ko
 msm_kgsl.ko
 oplus_bsp_fw_update.ko
-hdcp_qseecom.ko
+hdcp.ko
 qseecom-mod.ko
 cs_press_f71.ko
 sim_detect.ko
