@@ -212,9 +212,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 </mixPort>
 
                 <mixPort name="primary input" role="sink" maxOpenCount="2" maxActiveCount="2">
+                    <!-- #ifdef OPLUS_FEATURE_OPREC_SUPPORT -->
+                    <!-- Yongzhi.Zhang@MULTIMEDIA.AUDIODRIVER.FEATURE, 2021/11/15, Add for dual dynamic hdr record -->
+                    <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
+                             samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
+                             channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO AUDIO_CHANNEL_IN_FRONT_BACK"/>
+                    <!--
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO AUDIO_CHANNEL_IN_FRONT_BACK"/>
+                    -->
+                    <!-- #endif OPLUS_FEATURE_OPREC_SUPPORT -->
                 </mixPort>
                 <mixPort name="fast input" role="sink"
                          flags="AUDIO_INPUT_FLAG_FAST">
