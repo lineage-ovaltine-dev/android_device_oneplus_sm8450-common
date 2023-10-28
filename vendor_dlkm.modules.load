@@ -237,6 +237,7 @@ hdmi_dlkm.ko
 tfa98xx-v6_dlkm.ko
 audio_extend_dlkm.ko
 sia9175_dlkm.ko
+msm-cvp.ko
 camera.ko
 gsim.ko
 ipam.ko
