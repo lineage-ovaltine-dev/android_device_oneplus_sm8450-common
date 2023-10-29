@@ -39,7 +39,6 @@ void load_props(int i, int j) {
     };
 
     for (const auto& source : RO_PROP_SOURCES) {
-        OverrideRoProperty(source, "device", DEVICES[j], true);
         OverrideRoProperty(source, "model", MODELS[i], true);
         OverrideRoProperty(source, "name", MODELS[i], true);
         OverrideRoProperty(source, "fingerprint", BUILD_FINGERPRINT[i], false);
