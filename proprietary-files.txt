@@ -1307,18 +1307,6 @@ odm/etc/init/vendor-oplus-hardware-touch-V1-service.rc
 odm/etc/permissions/vendor-oplus-hardware-touch-V1.xml
 odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
 
-# Touchscreen firmware
-odm/firmware/tp/22803/FW_S3910_TIANMA.img
-odm/firmware/tp/22803/FW_S3910_TIANMA_FAE.img
-odm/firmware/tp/22803/FW_S3910_TIANMA_HBP.img
-odm/firmware/tp/22803/FW_S3910_TIANMA_HBP_FAE.img
-odm/firmware/tp/22803/FW_S3910_TIANMA_sys_edge_touch_config.img
-odm/firmware/tp/22803/LIB_S3910_TIANMA_HBP.so
-odm/firmware/tp/22803/LIMIT_S3910_TIANMA.img
-odm/firmware/tp/22803/LIMIT_S3910_TIANMA_AGING.img
-odm/firmware/tp/22803/LIMIT_S3910_TIANMA_HBP.img
-odm/firmware/tp/22803/sys_edge_touch_config.xml
-
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
