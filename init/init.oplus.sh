@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-if grep -q simcardnum.doublesim=1 /proc/cmdline; then
+if grep -q simcardnum.simcardnum=1 /proc/cmdline; then
     setprop vendor.radio.multisim.config dsds
 fi
