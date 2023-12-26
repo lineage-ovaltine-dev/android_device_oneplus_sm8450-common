@@ -292,6 +292,10 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libpalclient
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.memtrack-service
+
 # NDK
 PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
