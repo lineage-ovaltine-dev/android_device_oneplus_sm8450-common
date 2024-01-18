@@ -1169,8 +1169,11 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # Touch
-odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
+odm/bin/hw/vendor-oplus-hardware-touch-V2-service
 odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so
+odm/etc/vintf/manifest/manifest_touch_aidl.xml
+odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
