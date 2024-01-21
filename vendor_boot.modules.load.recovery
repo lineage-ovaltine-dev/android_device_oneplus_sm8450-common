@@ -196,9 +196,6 @@ oplus_bsp_fw_update.ko
 hdcp.ko
 qseecom-mod.ko
 cs_press_f71.ko
-sim_detect.ko
-oem_qmi_client.ko
-oplus_gpio.ko
 aw8697.ko
 haptic.ko
 haptic_feedback.ko
