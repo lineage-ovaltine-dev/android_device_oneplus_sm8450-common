@@ -56,6 +56,7 @@ PRODUCT_PACKAGES += \
     libsndcardparser:64 \
     libtinycompress:64 \
     libvolumelistener:64 \
+    sound_trigger.primary.taro:64 \
     vendor.qti.hardware.AGMIPC@1.0-service \
     vendor.qti.hardware.pal@1.0-impl:64
 

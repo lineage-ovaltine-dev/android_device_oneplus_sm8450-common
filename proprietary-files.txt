@@ -153,7 +153,6 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so:odm/lib64/vendor.qti.hardware.pal@1.0-impl.so;MODULE_SUFFIX=_odm
 
 # Audio Listen
-vendor/lib64/hw/sound_trigger.primary.taro.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
 vendor/lib64/liblistensoundmodel2vendor.so
