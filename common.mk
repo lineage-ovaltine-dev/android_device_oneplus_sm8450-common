@@ -38,31 +38,31 @@ SOONG_CONFIG_android_hardware_audio += \
 SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio@7.0-impl:64 \
+    android.hardware.audio.effect@7.0-impl:64 \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    audio.bluetooth.default \
-    audio.primary.taro \
-    audio.r_submix.default \
-    audio.usb.default \
+    android.hardware.bluetooth.audio-impl:64 \
+    android.hardware.soundtrigger@2.3-impl:64 \
+    audio.bluetooth.default:64 \
+    audio.primary.taro:64 \
+    audio.r_submix.default:64 \
+    audio.usb.default:64 \
     audioadsprpcd \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libbatterylistener \
-    libfmpal \
-    libhapticgenerator \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libsndcardparser \
-    libtinycompress \
-    libvolumelistener \
+    libagm_compress_plugin:64 \
+    libagm_mixer_plugin:64 \
+    libagm_pcm_plugin:64 \
+    libbatterylistener:64 \
+    libfmpal:64 \
+    libhfp_pal:64 \
+    libhapticgenerator:64 \
+    libqcompostprocbundle:64 \
+    libqcomvisualizer:64 \
+    libqcomvoiceprocessing:64 \
+    libsndcardparser:64 \
+    libtinycompress:64 \
+    libvolumelistener:64 \
     vendor.qti.hardware.AGMIPC@1.0-service \
-    vendor.qti.hardware.pal@1.0-impl \
-    libhfp_pal
+    vendor.qti.hardware.pal@1.0-impl:64
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal
 QCV_FAMILY_SKUS := taro cape
@@ -95,8 +95,8 @@ PRODUCT_COPY_FILES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti \
-    android.hardware.boot@1.2-impl-qti.recovery \
+    android.hardware.boot@1.2-impl-qti:64 \
+    android.hardware.boot@1.2-impl-qti.recovery:64 \
     android.hardware.boot@1.2-service
 
 # Camera
@@ -114,7 +114,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display:64 \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh \
     vendor.qti.hardware.display.allocator-service \
@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
 
 # Fastboot
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl.custom \
+    android.hardware.fastboot@1.1-impl.custom:64 \
     fastbootd
 
 # Fingerprint
@@ -147,19 +147,19 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss-aidl-impl-qti \
-    android.hardware.gnss-aidl-service-qti \
+    android.hardware.gnss@2.1-impl-qti:64 \
+    android.hardware.gnss-aidl-impl-qti:64 \
+    android.hardware.gnss-aidl-service-qti:64 \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy \
     gnss@2.0-xtwifi-client.policy \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libgnsspps \
-    libgps.utils \
-    libloc_core \
-    liblocation_api
+    libbatching:64 \
+    libgeofencing:64 \
+    libgnss:64 \
+    libgnsspps:64 \
+    libgps.utils:64 \
+    libloc_core:64 \
+    liblocation_api:64 
 
 PRODUCT_PACKAGES += \
     apdr.conf \
@@ -185,8 +185,8 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.qti \
-    android.hardware.health-service.qti_recovery
+    android.hardware.health-service.qti:64 \
+    android.hardware.health-service.qti_recovery:64 
 
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
@@ -295,7 +295,7 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti_vendor
+    libvndfwk_detect_jni.qti_vendor:64 
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -411,8 +411,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     libwpa_client \
-    libwifi-hal-ctrl \
-    libwifi-hal-qcom \
+    libwifi-hal-ctrl:64 \
     wpa_supplicant \
     wpa_supplicant.conf
 
