@@ -163,7 +163,6 @@ leds_aw210xx.ko
 plh_vendor.ko
 gplaf_vendor.ko
 shared_rail_vendor.ko
-tz_log.ko
 qce50.ko
 qcedev-mod.ko
 ipa_fmwk.ko
