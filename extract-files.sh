@@ -145,6 +145,14 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --replace-needed "android.frameworks.stats-V1-ndk_platform.so" "android.frameworks.stats-V2-ndk.so" "${2}"
             ;;
+        vendor/bin/qcc-trd)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libgrpc++_unsecure.so" "libgrpc++_unsecure_prebuilt.so" "${2}"
+            ;;
+        vendor/lib64/libgrpc++_unsecure_prebuilt.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --set-soname libgrpc++_unsecure_prebuilt.so "${2}"
+            ;;
         *)
             return 1
             ;;
