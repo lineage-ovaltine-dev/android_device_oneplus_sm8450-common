@@ -192,6 +192,7 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Power
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
+BOARD_POWER_CUSTOM_BOARD_LIB += vendor.oplus.hardware.touch-V1-ndk
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
