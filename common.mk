@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
     libexif.vendor \
     libutilscallstack.vendor \
+    libui.vendor \
     libyuv.vendor \
     vendor.qti.hardware.camera.aon@1.3.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
