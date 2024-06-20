@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7.vendor \
+    android.frameworks.stats-V1-ndk_platform \
     camera.device@1.0-impl \
     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.aon@1.0.vendor \
@@ -196,6 +197,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk_platform.vendor \
+    android.hardware.gnss-V2-ndk.vendor \
     android.hardware.keymaster-V3-ndk_platform.vendor
 
 # Graphics
