@@ -52,7 +52,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndcardparser \
-    libstdc++.vendor \
     libtinycompress \
     libvolumelistener \
     vendor.qti.hardware.AGMIPC@1.0-service \
