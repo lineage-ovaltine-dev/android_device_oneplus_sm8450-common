@@ -1276,9 +1276,6 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # Touch
-odm/bin/hw/vendor-oplus-hardware-touch-V2-service
-odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
-odm/etc/permissions/vendor-oplus-hardware-touch-V1.xml
 odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so
 
