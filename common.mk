@@ -402,7 +402,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.network-V1-ndk.vendor \
     android.hardware.radio.sim-V1-ndk.vendor \
     android.hardware.radio.voice-V1-ndk.vendor \
-    android.hardware.secure_element@1.2.vendor \
     libprotobuf-cpp-full \
     librmnetctl
 
