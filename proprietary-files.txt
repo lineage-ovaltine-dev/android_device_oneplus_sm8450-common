@@ -167,12 +167,12 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 
 # Bluetooth
-odm/etc/compatibility_matrix_oplus_bluetooth_audio_extend.xml
-odm/lib64/libbluetooth_audio_extend_factory_client.so
-odm/lib64/vendor.oplus.hardware.bluetooth_audio_extend@2.1.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/lib_bt_aptx.so
+vendor/lib64/lib_bt_ble.so
+vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 
