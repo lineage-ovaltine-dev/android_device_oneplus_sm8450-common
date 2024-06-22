@@ -167,12 +167,15 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 
 # Bluetooth
-odm/etc/compatibility_matrix_oplus_bluetooth_audio_extend.xml
 odm/lib64/libbluetooth_audio_extend_factory_client.so
+odm/lib64/libbluetooth_audio_extend_session_oplus.so
 odm/lib64/vendor.oplus.hardware.bluetooth_audio_extend@2.1.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/lib_bt_aptx.so
+vendor/lib64/lib_bt_ble.so
+vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 
@@ -903,6 +906,7 @@ odm/lib64/vendor.oplus.hardware.radio@1.0.so
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
+system_ext/lib64/vendor.qti.diaghal@1.0.so
 
 # RIL (vendor)
 vendor/app/IWlanService/IWlanService.apk
@@ -1023,7 +1027,7 @@ vendor/lib64/qtiwakelock.so
 vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.ims-V1-ndk_platform.so
-vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
+vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.connectionfactory-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.dataactivity-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.ka-V1-ndk_platform.so
