@@ -97,6 +97,9 @@ function blob_fixup() {
         vendor/etc/seccomp_policy/qwesd@2.0.policy)
             echo "pipe2: 1" >> "${2}"
             ;;
+        odm/lib64/libextensionlayer.so|vendor/lib64/hw/camera.qcom.so)
+            sed -i "s/ro.product.system.brand/vendor.oplus.camera.gsi/" "${2}"
+            ;;
     esac
 }
 
