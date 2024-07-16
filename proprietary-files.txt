@@ -520,6 +520,8 @@ vendor/lib64/liblowi_client.so|65ed08928d01224d9d69e4520260c730b0f91eb3
 vendor/lib64/liblowi_common.so|85283ad9594dffd5c34741ebfd680ac154bd8b84
 vendor/lib64/liblowi_wifihal.so|f348c1a940e43a053dc18f46290c57e748935b0f
 vendor/lib64/libminksocket_vendor.so|89cf4b4c9ba22c4528beea69dcd6c93d3547cdb6
+vendor/lib64/libpal_net_if.so|c9e4bfc810ce90be4bab3f43a6a87dc523ae1a83
+vendor/lib64/libqcc_file_agent.so|2062da8684a791c3c8afe57f8be3d2b010337a8a
 vendor/lib64/libqppe.so|6cd36b618b3e50378f347316fcd11dffd0e4866e
 vendor/lib64/libslimclient.so|c572c056bbba88a0ae740abb84dc8851756e4b4e
 vendor/lib64/libsys_info_cache.so|99b7796e09317215c4c8fd61359c2ceebcbe4dfe
@@ -886,6 +888,7 @@ system_ext/priv-app/ims/ims.apk|9065ecc8af98f75e860e6294524fd801ba0ebcc3
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|5a8e82da1d9ca14c341e461bae26d4c7b825a4b3
 
 # RIL (odm)
+odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
 odm/lib64/lib-virtual-modem-protos.so
 odm/lib64/libcommcenterfw.so
 odm/lib64/libcommcenterutils.so
@@ -957,6 +960,7 @@ vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
+vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
 vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/libQtiRilLoadable.so
 vendor/lib64/libconfigdb.so
