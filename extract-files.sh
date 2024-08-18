@@ -102,7 +102,7 @@ function blob_fixup() {
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti)
             [ "$2" = "" ] && return 0
-            grep -q android.hardware.security.rkp-V3-ndk.so "${2}" || "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
+            grep -q android.hardware.security.rkp-V1-ndk.so "${2}" || "${PATCHELF}" --add-needed "android.hardware.security.rkp-V1-ndk.so" "${2}"
             ;;
         vendor/etc/media_codecs_cape.xml|vendor/etc/media_codecs_cape_vendor.xml)
             [ "$2" = "" ] && return 0
