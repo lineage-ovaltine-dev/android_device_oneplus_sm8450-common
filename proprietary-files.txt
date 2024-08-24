@@ -634,6 +634,10 @@ vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/lib/libqconfigclient.so
+vendor/lib64/libAlacSwDec.so
+vendor/lib64/libApeSwDec.so
+vendor/lib64/libEvrcSwCodec.so
+vendor/lib64/libFlacSwDec.so
 vendor/lib64/libmmosal_vendor.so
 vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
@@ -674,11 +678,6 @@ odm/lib64/aiboost/libQnnHtpV69Stub.so
 odm/etc/nfc/libnfc-mtp-SN100.conf_22881:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_22881:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_68:vendor/firmware/sn100u.bin
-
-# OMX
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
