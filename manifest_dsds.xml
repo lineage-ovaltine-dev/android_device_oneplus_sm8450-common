@@ -154,29 +154,38 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
 
     <!-- #ChangJian@TECH.NW.REG.2054403, 2019/05/25, add for Euclid -->
-    <hal format="aidl">
-        <name>vendor.oplus.hardware.appradioaidl</name>
-        <version>1</version>
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.appradio</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
         <interface>
-            <name>IAppRadioStable</name>
-            <instance>OplusAppRadio0</instance>
-            <instance>OplusAppRadio1</instance>
+            <name>IOplusAppRadio</name>
+            <instance>oplus_app_slot1</instance>
+            <instance>oplus_app_slot2</instance>
         </interface>
     </hal>
 
-    <hal format="aidl">
+    <hal format="hidl">
         <name>vendor.oplus.hardware.ims</name>
-        <version>1</version>
-        <fqname>IImsStable/OplusImsRadio0</fqname>
-        <fqname>IImsStable/OplusImsRadio1</fqname>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusImsRadio</name>
+            <instance>oplusimsradio0</instance>
+            <instance>oplusimsradio1</instance>
+        </interface>
     </hal>
 
     <!-- #ChangJian@TECH.NW.REG.2054403, 2019/05/25, add for Euclid -->
-    <hal format="aidl">
+    <hal format="hidl">
         <name>vendor.oplus.hardware.radio</name>
-        <version>1</version>
-        <fqname>IRadioStable/OplusRadio0</fqname>
-        <fqname>IRadioStable/OplusRadio1</fqname>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusRadio</name>
+            <instance>oplus_slot1</instance>
+            <instance>oplus_slot2</instance>
+        </interface>
     </hal>
 
     <!-- LuanShaopu@NETWORK.ARCH.841327, 2020/12/22, add for subsys -->

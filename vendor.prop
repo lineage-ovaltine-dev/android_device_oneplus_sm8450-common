@@ -54,13 +54,6 @@ vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
-# Audio - Dolby
-ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1
-ro.vendor.dolby.model=PAFM00
-ro.vendor.dolby.device=OP46C3
-ro.vendor.dolby.manufacturer=OPLUS
-ro.vendor.dolby.brand=OPLUS
-
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=6
@@ -124,7 +117,7 @@ debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
-debug.sf.latch_unsignaled=0
+debug.sf.latch_unsignaled=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
@@ -144,6 +137,8 @@ ro.incremental.enable=yes
 
 # Media
 debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=0
 
 # Netflix
 ro.netflix.bsp_rev=Q8450-34634-1
@@ -155,6 +150,7 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.rat_on=combine
 ro.telephony.default_network=33,33
 
 # Sensors

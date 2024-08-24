@@ -180,7 +180,10 @@ qcom_sync_file.ko
 qfprom-sys.ko
 oplus_sensor.ko
 ssc_interact.ko
+oplus_bsp_sensor_feedback.ko
 boot_mode.ko
+oplus_mm_kevent.ko
+oplus_mm_kevent_fb.ko
 qcom_pm8008-regulator.ko
 qpnp-amoled-regulator.ko
 hvc_gunyah.ko
@@ -193,8 +196,12 @@ oplus_bsp_fw_update.ko
 hdcp.ko
 qseecom-mod.ko
 cs_press_f71.ko
+sim_detect.ko
+oem_qmi_client.ko
+oplus_gpio.ko
 aw8697.ko
 haptic.ko
+haptic_feedback.ko
 qcom-i2c-pmic.ko
 sg.ko
 spi-msm-geni.ko
