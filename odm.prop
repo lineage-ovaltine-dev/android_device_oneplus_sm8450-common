@@ -28,8 +28,11 @@ vendor.media.vpp.osie.enable=0
 vendor.media.vpp.sr.enable=0
 
 # Radio
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.poweron_opt=1
+persist.vendor.radio.process_sups_ind=1
 persist.vendor.radio.stack_id_0=0
 persist.vendor.radio.stack_id_1=1
 ro.sys.reserve.integrate=true
