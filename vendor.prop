@@ -88,7 +88,9 @@ ro.soc.manufacturer=QTI
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
-persist.vendor.dpmhalservice.enable=1
+persist.vendor.dpm.vndr.tcm=2
+persist.vendor.dpm.vndr.feature=11
+persist.vendor.dpm.vndr.halservice_enable=1
 
 # Display
 vendor.display.comp_mask=0
