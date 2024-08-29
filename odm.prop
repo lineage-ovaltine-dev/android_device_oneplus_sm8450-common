@@ -14,6 +14,11 @@ persist.vendor.bluetooth.modem_nv_support=true
 
 # Display
 ro.vendor.display.sensortype=2
+ro.vendor.oplus.display.cwb.aod_forbidden=1
+ro.vendor.oplus.display.cwb.display_id=0
+ro.vendor.oplus.display.cwb.fod_forbidden=1
+ro.vendor.oplus.display.cwb.postprocess=1
+ro.vendor.oplus.display.cwb.roi=1
 vendor.display.primary_mixer_stages=9
 
 # Media
