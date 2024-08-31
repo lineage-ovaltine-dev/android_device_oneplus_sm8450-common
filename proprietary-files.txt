@@ -584,7 +584,6 @@ vendor/etc/msm_irqbalance.conf
 
 # Kernel - from ingot
 vendor/bin/init.kernel.post_boot-cape.sh|69007108cc201408f2e3ca8e6ca861f0277557d5
-vendor/bin/init.kernel.post_boot.sh|48ac25fbe0dbb22c7682f201196ee503b0717290
 vendor/bin/init.qti.kernel.sh|1c17e31a8edfc0b188802d280af9a85038f96b60
 vendor/bin/init.qti.write.sh|23980bc0722eea97111cc1fe63ec17eeb1d978df
 vendor/bin/vendor_modprobe.sh|e7ed60312d6d9e260ed0f25e345168ddcec8d5b7
