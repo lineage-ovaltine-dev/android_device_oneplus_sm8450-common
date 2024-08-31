@@ -100,7 +100,6 @@ oplus_mdmfeature.ko
 bcl_pmic5.ko
 nfc_i2c.ko
 msm_sysstats.ko
-zsmalloc.ko
 msm_show_resume_irq.ko
 mhi_cntrl_qcom.ko
 mhi.ko
