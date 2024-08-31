@@ -725,7 +725,7 @@ vendor/etc/init/ipa_fws.rc
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
-# Kernel
+# Kernel - from ingot
 vendor/bin/init.kernel.post_boot-cape.sh
 vendor/bin/init.kernel.post_boot-taro.sh
 vendor/bin/init.kernel.post_boot.sh
