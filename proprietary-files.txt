@@ -345,14 +345,7 @@ odm/lib64/vendor.pixelworks.hardware.display@1.1.so
 odm/lib64/vendor.pixelworks.hardware.display@1.2.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
-vendor/lib64/libpwirisfeature.so
-vendor/lib64/libpwirishalwrapper.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.2.so
 vendor/lib64/vendor.pixelworks.hardware.feature-V1-ndk_platform.so
-vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so
 
 # Display (SDM)
 vendor/etc/display/DPU660.xml
