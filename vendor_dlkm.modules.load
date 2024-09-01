@@ -115,7 +115,6 @@ tcpc_class.ko
 rt-regmap.ko
 repeater.ko
 repeater-i2c-eusb2.ko
-synaptics_tcm2.ko
 oplus_bsp_tp_custom.ko
 oplus_bsp_tp_comon.ko
 oplus_bsp_tp_notify.ko
