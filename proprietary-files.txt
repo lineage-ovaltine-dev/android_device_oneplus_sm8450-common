@@ -195,8 +195,6 @@ system/lib64/libziparchive.so:odm/lib64/libziparchive.so
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
@@ -467,7 +465,7 @@ vendor/bin/xtwifi-client|43aa6587ce50ae5911cd1b31cb6932f32bb3709e
 vendor/etc/init/loc-launcher.rc|2942e599cec7c3491aa170bf9606713ce3d07689
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml|6a7f041e23b7ccbd039110260e8e7e2cfb2d7d3c
 vendor/lib64/libcacertclient.so|49e33d1e017d64365916ea824bc3dd8f9b0b5460
-vendor/lib64/libcdfw.so|de2c1c446f9242ffba7e66c4bbdd3110dd50b5de
+vendor/lib64/libcdfw.so|fa5a1519761df509627588e1c20bc9f84de04baa
 vendor/lib64/libcdfw_remote_api.so|ac13abd3be1a3056f4ec99875a86658af7869962
 vendor/lib64/libdataitems.so|633c823b52a6d8a9ab55e1c1f15bd306f1f360f1
 vendor/lib64/libengineplugin.so|3a7d965d4788e2e1611241683be1431683de39db
@@ -491,14 +489,14 @@ vendor/lib64/liblocdiagiface.so|d7f1a5e5fc50fc60b1d07bebab3532f97b788118
 vendor/lib64/liblowi_client.so|65ed08928d01224d9d69e4520260c730b0f91eb3
 vendor/lib64/liblowi_common.so|85283ad9594dffd5c34741ebfd680ac154bd8b84
 vendor/lib64/liblowi_wifihal.so|f348c1a940e43a053dc18f46290c57e748935b0f
-vendor/lib64/libminksocket_vendor.so|89cf4b4c9ba22c4528beea69dcd6c93d3547cdb6
+vendor/lib64/libminksocket_vendor.so|a981895d01db3e09458780a1219698e36990d32d
 vendor/lib64/libpal_net_if.so|c9e4bfc810ce90be4bab3f43a6a87dc523ae1a83
 vendor/lib64/libqcc_file_agent.so|2062da8684a791c3c8afe57f8be3d2b010337a8a
 vendor/lib64/libqppe.so|6cd36b618b3e50378f347316fcd11dffd0e4866e
 vendor/lib64/libslimclient.so|c572c056bbba88a0ae740abb84dc8851756e4b4e
 vendor/lib64/libsys_info_cache.so|99b7796e09317215c4c8fd61359c2ceebcbe4dfe
 vendor/lib64/libxtadapter.so|b70420f4e67f3f8af91f7c2712dccce67f7f280f
-vendor/lib64/qcril_client.so|767e792212f844fe4da003bc515980fcd77e41b2
+vendor/lib64/qcril_client.so|e0825bfed5c7f8b3baf0d9af653bd0281b27056d
 vendor/lib64/vendor.qti.gnss-V5-ndk.so|4854ea8bf89c800f72ee9d7d25fc94c61d2bff4f
 vendor/lib64/vendor.qti.gnss-service.so|f27f0dbdd9f638ea9207ad05933b1c42e7e6a922
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|266dcb75239eb24a529f7a4bce0286fba3dd0693
@@ -929,7 +927,6 @@ vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libminkdescriptor.so
-vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_datapath_proxy.so
@@ -977,7 +974,6 @@ vendor/lib64/qcrilInterfaces.so
 vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrilNrQmiModule.so
 vendor/lib64/qcrilNr_aidl_IQtiRadioConfig.so
-vendor/lib64/qcril_client.so
 vendor/lib64/qcrild_libqcrilnr.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiPeripheralMgr.so
