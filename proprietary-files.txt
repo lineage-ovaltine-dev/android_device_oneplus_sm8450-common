@@ -445,23 +445,21 @@ vendor/lib64/libllvm-qgl.so
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
 
-# GNSS - from ingot
+# GNSS - from ingot-user 14 UKQ1.240227.155 155 release-keys
 vendor/app/CACertService/CACertService.apk|ea18679b8a6cdf4f9f00b7fb5d7a86e12be38f23
 vendor/bin/edgnss-daemon|11e295ebe350de7312a2ab97f25ccbbae48ed8a4
-vendor/bin/engine-service|beb3ab2585cad51bbfb077e87189a868fe2d2384
 vendor/bin/loc_launcher|dbc5addc025360fd04dec5b024d476514a6f613f
 vendor/bin/lowi-server;DISABLE_CHECKELF|0a8998f8190c282a14fed9e33691b54a2dc6d3e9
 vendor/bin/mlid|ab9291752d37ae8165cb78a6a635d48f7a668c70
 vendor/bin/slim_daemon;DISABLE_CHECKELF|3ee9d84d10dc5231e1448a686979c4428fe102bd
 vendor/bin/xtra-daemon|e4a632e4b1b6ac75e1921bcd0a17fd0450ccf906
-vendor/bin/xtwifi-client|43aa6587ce50ae5911cd1b31cb6932f32bb3709e
+vendor/bin/xtwifi-client|d908e69593018498f021b4c84349b082bb422d8e
 vendor/etc/init/loc-launcher.rc|2942e599cec7c3491aa170bf9606713ce3d07689
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml|6a7f041e23b7ccbd039110260e8e7e2cfb2d7d3c
 vendor/lib64/libcacertclient.so|49e33d1e017d64365916ea824bc3dd8f9b0b5460
-vendor/lib64/libcdfw.so|fa5a1519761df509627588e1c20bc9f84de04baa
+vendor/lib64/libcdfw.so|de2c1c446f9242ffba7e66c4bbdd3110dd50b5de
 vendor/lib64/libcdfw_remote_api.so|ac13abd3be1a3056f4ec99875a86658af7869962
 vendor/lib64/libdataitems.so|633c823b52a6d8a9ab55e1c1f15bd306f1f360f1
-vendor/lib64/libengineplugin.so|3a7d965d4788e2e1611241683be1431683de39db
 vendor/lib64/libgdtap.so|c29f98f127d86f6ecc4767322e363b7f46a3d34c
 vendor/lib64/libizat_client_api.so|fd7e9a0539b361d5eba7aae731cf5d2f96ef5004
 vendor/lib64/libizat_core.so|afb3abf7376dc50bc20b46256fba78790aa30040
@@ -476,20 +474,18 @@ vendor/lib64/libloc_qwes_iface.so|8ce302dd3fea6752d9ae2ee502f2f400ee8073f6
 vendor/lib64/libloc_ril_client.so|f9cabc22401f13aec975bdae0609fc10fca01807
 vendor/lib64/libloc_socket.so|ac5dc3576077ec04c3cce70b881e51e8a90f2841
 vendor/lib64/libloc_util.so|0a50bf3835e7e3b6ed04db1735cd364d08abe36b
-vendor/lib64/liblocationservice.so|121e1f00ae291e645a1117f57a24fa5255dc5a8e
+vendor/lib64/liblocationservice.so|d6b296541b9bd0c57a4098f82e3b3bc461bcc7f3
 vendor/lib64/liblocationservice_glue.so|d2620e7fd5870011c7380c8a559f6c04b20676ee
 vendor/lib64/liblocdiagiface.so|d7f1a5e5fc50fc60b1d07bebab3532f97b788118
 vendor/lib64/liblowi_client.so|65ed08928d01224d9d69e4520260c730b0f91eb3
 vendor/lib64/liblowi_common.so|85283ad9594dffd5c34741ebfd680ac154bd8b84
 vendor/lib64/liblowi_wifihal.so|f348c1a940e43a053dc18f46290c57e748935b0f
-vendor/lib64/libminksocket_vendor.so|a981895d01db3e09458780a1219698e36990d32d
+vendor/lib64/libminksocket_vendor.so|89cf4b4c9ba22c4528beea69dcd6c93d3547cdb6
 vendor/lib64/libpal_net_if.so|c9e4bfc810ce90be4bab3f43a6a87dc523ae1a83
 vendor/lib64/libqcc_file_agent.so|2062da8684a791c3c8afe57f8be3d2b010337a8a
-vendor/lib64/libqppe.so|6cd36b618b3e50378f347316fcd11dffd0e4866e
-vendor/lib64/libslimclient.so|c572c056bbba88a0ae740abb84dc8851756e4b4e
 vendor/lib64/libsys_info_cache.so|99b7796e09317215c4c8fd61359c2ceebcbe4dfe
 vendor/lib64/libxtadapter.so|b70420f4e67f3f8af91f7c2712dccce67f7f280f
-vendor/lib64/qcril_client.so|e0825bfed5c7f8b3baf0d9af653bd0281b27056d
+vendor/lib64/qcril_client.so|767e792212f844fe4da003bc515980fcd77e41b2
 vendor/lib64/vendor.qti.gnss-V5-ndk.so|4854ea8bf89c800f72ee9d7d25fc94c61d2bff4f
 vendor/lib64/vendor.qti.gnss-service.so|f27f0dbdd9f638ea9207ad05933b1c42e7e6a922
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|266dcb75239eb24a529f7a4bce0286fba3dd0693
@@ -815,30 +811,35 @@ vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
-# IMS (kang) - from eqs T1TBS33.32-8-9-7-2
-system_ext/app/ImsRcsService/ImsRcsService.apk|a95f2f5692bca44222f4f4e251543061cf6cb0fe
-system_ext/app/QtiTelephony/QtiTelephony.apk|fde1b6b3752e2d2edbb773cb6c0d26df67437fc4
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|0400c9709f3d036cbb91c886969a4d7e6908a3b1
-system_ext/framework/qcrilhook.jar|7bbbe3e6a73e643ae5602368899f0287af98cb3d
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|e01800d96b0db524836856410d3dd0b9352ec46c
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|ae7015efe55d17b1caf0da0c2247dac6cfaaa272
-system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar|137f296405fd5f8c036c511f1d186e7178c5d57f
-system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar|70dbc40c581103970402959342ea250b6a1fb84b
-system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar|d711276f07ff0fd81fc6a63ad018b3eaf85ef4c9
-system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar|f54828a81f02b1f9ff1379e34efb60d064aa27f6
-system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar|e627b85a9268734c5e66adf67d18e6d3fb0bf1de
-system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar|517127c426fa94f28d97409bc7d07ca4cb92a9b0
-system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|c7ea95f134ca6dc2b569b8c9b1c9b433bb6dae0c
-system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|f221e0dfbb89daab9cca03104f9a92b2fd9b15bc
-system_ext/lib64/lib-imsvideocodec.so|b3c71f1bb514a86c2bbc08bdc245bf9affa56323
-system_ext/lib64/lib-imsvt.so|707afd60b7849df50ca46922181dc8cf72682df9
-system_ext/lib64/lib-imsvtextutils.so|1dfb5640cd23a92e7ca55a84118b2966653aebc7
-system_ext/lib64/lib-imsvtutils.so|6df6279955493da11860bb048db38f01ec05c2aa
-system_ext/lib64/libdiag_system.so|ced16a9ffd51f155a4b20a0c04fe7b595bfa8cc4
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|f6b7647cfe080baeed006c932b495ff94b5685a7
-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|5b34af19636863d22e5e7b4f20136564e6ee2222
-system_ext/priv-app/ims/ims.apk|9065ecc8af98f75e860e6294524fd801ba0ebcc3
-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|5a8e82da1d9ca14c341e461bae26d4c7b825a4b3
+# IMS (kang) - from ingot-user 14 UKQ1.240227.155 155 release-keys
+system_ext/app/ImsRcsService/ImsRcsService.apk|e2291d2a69478b14792be99f6e1b2f95d66e24b9
+system_ext/app/QtiTelephony/QtiTelephony.apk|4a55d7f9b0004149d5a6462ec3620ee01795709e
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|84cd0b14c295725e1df4a443f7350fa6a1b32b35
+system_ext/framework/qcrilhook.jar|d9778a3f8da09bf25c4905fb4e5d0fd7310f1f42
+system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|1d81605e2f99b043be0a70a7b3d1fc68e60cc5f2
+system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar|da2203570a8398defb140f76ebf4fa07f513c741
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|b870964be5fe952385718e23cf3e56a65bf1cad8
+system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar|c36b5f62fd43d62bff6282320f3ed2ea0a18c27d
+system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar|50c52c569b10da97639d4fc0004c0df2ee5a01ab
+system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar|329df8446cba8cb3a16dab1d0fc5624f1ac8ffe5
+system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar|74f18e563abddaeabc7821d58d6df28e370eb737
+system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar|470498817c809e32290f6adc7a0fc66a48c2b678
+system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar|813ba6d5ba578ab148dfe3cbde79aa69aaf4c6d6
+system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar|00ab4d763bd95cc428e3cdfe725a63c4b8d721d3
+system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar|4feb1dee0a2c32248dc6000d2d1ad605e1c9cc0d
+system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|f734b46b12348d3fe38fd874809d7d918e01f863
+system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|f68862295f5ae16f10ee8ab3650f42c8b150db4a
+system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|45546607399adada54c166b0fb63ad648c6eda1e
+system_ext/lib64/lib-imsvideocodec.so|7d61371e7ffbf84f32f6585193e76109caa6d88f
+system_ext/lib64/lib-imsvt.so|0517dff9db29cbf4a2a62706e1ce3b322cf1d681
+system_ext/lib64/lib-imsvtextutils.so|19b0a5b9119388e735729e9a86ee7ee0a1355077
+system_ext/lib64/lib-imsvtutils.so|8a8d4f3c6b57fc3a31f0982a9cd43b990514e1a7
+system_ext/lib64/libdiag_system.so|ca78de6a8d54eeda1b71952bc95a11be8094b24a
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|6f6c3104b8d04f8a416629ddafca5e7514151ac6
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7e81d062d2dbea393165ff96372e3e0e7d77cd92
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|bb32703c026364da33ca1b4f83c839e1e312ae9b
+system_ext/priv-app/ims/ims.apk|6db4946866147feb589dae236d945720c220bc5a
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|c58f0eca716f458e3728c2e6404332afe5682d17
 
 # RIL (odm)
 odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
