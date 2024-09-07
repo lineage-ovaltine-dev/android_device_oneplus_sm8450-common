@@ -40,8 +40,8 @@ function lib_to_package_fixup_odm_variants() {
     fi
 
     case "$1" in
-        libpwirisfeature | \
-            libpwirishalwrapper)
+        audio.primary.taro | \
+            vendor.qti.hardware.pal@1.0-impl)
             echo "$1_odm"
             ;;
         *)
@@ -60,7 +60,6 @@ function lib_to_package_fixup_vendor_variants() {
             libQnnHtp | \
             libQnnHtpPrepare | \
             libQnnHtpV69Stub | \
-            libhwconfigurationutil | \
             vendor.oplus.hardware.performance-V1-ndk | \
             vendor.qti.diaghal@1.0 | \
             vendor.qti.hardware.dpmservice@1.0 | \
