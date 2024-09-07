@@ -307,7 +307,6 @@ vendor/lib64/libhdrdynamicootf.so
 
 # Display (HWC)
 odm/etc/vintf/manifest/manifest_oplus_cwb.xml
-odm/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
