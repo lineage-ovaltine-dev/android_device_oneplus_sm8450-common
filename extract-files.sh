@@ -70,6 +70,10 @@ function blob_fixup() {
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             sed -i "/SystemCamera = / s/0;$/1;/" "${2}"
             ;;
+        odm/lib64/libextensionlayer.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "libziparchive.so" "libziparchive_odm.so" "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             [ "$2" = "" ] && return 0
             sed -i "s/\/my_product/\/product/" "${2}"
