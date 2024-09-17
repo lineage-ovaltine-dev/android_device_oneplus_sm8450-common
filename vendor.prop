@@ -94,7 +94,7 @@ persist.vendor.dpm.vndr.halservice_enable=1
 
 # Display
 persist.sys.sf.color_saturation=1.0
-persist.sys.sf.native_mode=2
+persist.sys.sf.native_mode=259
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
