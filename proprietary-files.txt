@@ -1030,7 +1030,7 @@ vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.ssc.so|b529932aecdfb2ca8cefe92f32fc79344dc4877b|6bc48a42ecdb949dace796960dab2d4e46522e43
+vendor/lib64/sensors.ssc.so|b112a3992cb1595228d58652a5243d0d5536ee5a|a3cdf444bf39b5fb2d409ee98c3d6deac0d8ba67
 
 # Sensors config
 vendor/etc/sensors/config/diwali_default_sensors.json
