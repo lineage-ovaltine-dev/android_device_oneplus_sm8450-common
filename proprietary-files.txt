@@ -1027,16 +1027,12 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 # Sensors
 odm/bin/oplus_sensor_fb
 odm/lib64/liboplus_service.so
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/libcwb_client_vendor.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
@@ -1048,8 +1044,7 @@ vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.ssc.so|b529932aecdfb2ca8cefe92f32fc79344dc4877b|6bc48a42ecdb949dace796960dab2d4e46522e43
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/sensors.ssc.so
 
 # Sensors config
 vendor/etc/sensors/config/diwali_default_sensors.json
