@@ -116,6 +116,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             echo "pipe2: 1" >> "${2}"
             ;;
+        odm/lib64/libAlgoProcess.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/android.hardware.graphics.common-V2-ndk_platform.so/android.hardware.graphics.common-V5-ndk.so/" "${2}"
+            ;;
         *)
             return 1
             ;;
