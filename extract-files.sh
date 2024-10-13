@@ -118,7 +118,7 @@ function blob_fixup() {
             ;;
         odm/lib64/libAlgoProcess.so)
             [ "$2" = "" ] && return 0
-            sed -i "s/android.hardware.graphics.common-V2-ndk_platform.so/android.hardware.graphics.common-V5-ndk.so/" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V2-ndk_platform.so" "android.hardware.graphics.common-V5-ndk.so" "${2}"
             ;;
         odm/lib64/libaps_frame_registration.so|odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libCS.so|odm/lib64/libSuperRaw.so|odm/lib64/libYTCommon.so|odm/lib64/libyuv2.so)
             [ "$2" = "" ] && return 0
