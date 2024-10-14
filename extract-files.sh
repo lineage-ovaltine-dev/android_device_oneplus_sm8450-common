@@ -141,6 +141,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "vendor.qti.hardware.display.config-V5-ndk_platform.so" "vendor.qti.hardware.display.config-V5-ndk.so" "${2}"
             ;;
+        odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "android.frameworks.stats-V1-ndk_platform.so" "android.frameworks.stats-V2-ndk.so" "${2}"
+            ;;
         *)
             return 1
             ;;
