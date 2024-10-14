@@ -1,6 +1,0 @@
-cc_library_shared {
-    name: "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-    shared_libs: ["vendor.oplus.hardware.osense.client-V1-ndk"],
-    system_ext_specific: true,
-    vendor_available: true,
-}
