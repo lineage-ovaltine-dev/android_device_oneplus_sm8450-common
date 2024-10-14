@@ -22,7 +22,6 @@ vendor/etc/acdbdata/waipio_mtp/MTP_workspaceFileXml.qwsp
 vendor/bin/adsprpcd
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
@@ -99,7 +98,7 @@ vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so
-vendor/lib/rfsa/adsp/libhdr_skel.so
+vendor/lib/rfsa/adsp/libhdr_skel.so;MODULE_SUFFIX=_vendor
 vendor/lib/rfsa/adsp/libhme_dsp_skel.so
 vendor/lib/rfsa/adsp/libmctfengine_skel.so
 vendor/lib/rfsa/adsp/libosie_skel.so
@@ -151,8 +150,7 @@ vendor/lib64/soundfx/libreverbwrapper.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libvisualizer.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.pal@1.0.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so:odm/lib64/vendor.qti.hardware.pal@1.0-impl.so;MODULE_SUFFIX=_odm
 
 # Audio Listen
 vendor/lib64/hw/sound_trigger.primary.taro.so
@@ -594,9 +592,7 @@ odm/etc/media_codecs_c2_dolby_audio.xml
 odm/etc/media_codecs_ffmpeg.xml
 odm/etc/media_codecs_vendor_oplus.xml
 odm/etc/media_profiles_V1_0.xml
-odm/lib64/libaiboost_qnn_sr.so
-odm/lib64/libaiboost_sr.so
-odm/lib64/libaiboost_ubwc.so
+odm/lib64/libc++_shared.so
 odm/lib64/liboplusvppfilter.so
 odm/lib64/libosie_process.so
 odm/lib64/libosie_stub.so
@@ -1083,6 +1079,7 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
 # Snapdragon Computer Vision Engine
+vendor/lib64/libeva.so
 vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libscveCommon.so
