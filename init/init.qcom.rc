@@ -27,14 +27,9 @@
 
 import /vendor/etc/init/hw/init.qti.ufs.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
-import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
-import /vendor/etc/init/hw/init.qcom.factory.rc
 
 on early-init
-    mount tracefs tracefs /sys/kernel/tracing
-    chmod 0755 /sys/kernel/tracing
-
   # create symlink for vendor mount points
     symlink /vendor/firmware_mnt /firmware
     symlink /vendor/bt_firmware /bt_firmware
@@ -131,7 +126,6 @@ on boot
     mkdir /persist/misc 0770 system system
     mkdir /persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/time 0770 system system
-    mkdir /mnt/vendor/persist/secnvm 0770 system system
     mkdir /mnt/vendor/persist/iar_db 0770 system system
     mkdir /mnt/vendor/spunvm 0770 system system
 
@@ -141,7 +135,6 @@ on boot
 
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
-
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
@@ -197,12 +190,8 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
-
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
-
-    # limit discard size to 128MB in order to avoid long IO latency
-    write /sys/block/sda/queue/discard_max_bytes 134217728
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -360,28 +349,8 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
-service nqnfcinfo /system/vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-
-service iop /system/vendor/bin/iop
-    class main
-    user root
-    group root
-    disabled
-    socket iop seqpacket 0666 root system
-
 service vendor.ssr_setup /system/vendor/bin/ssr_setup
     oneshot
-    disabled
-
-service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
-    class main
-    user system
-    group system
-    ioprio rt 4
     disabled
 
 on property:ro.vendor.iocgrp.config=1
@@ -458,11 +427,6 @@ on property:vendor.media.target_variant=*
     setprop ro.media.xml_variant.codecs ${vendor.media.target_variant}
     setprop ro.media.xml_variant.codecs_performance ${vendor.media.target_variant}
 
-service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
-    class core
-    user root
-    oneshot
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
@@ -483,43 +447,6 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
     oneshot
-
-service qmiproxy /system/bin/qmiproxy
-    class main
-    user radio
-    group radio diag
-    disabled
-
-# Data Migration
-service vendor.move_wifi_data /system/bin/move_wifi_data.sh
-    class main
-    user  wifi
-    group wifi
-    disabled
-    oneshot
-
-service ptt_socket_app /system/vendor/bin/ptt_socket_app -d
-    class main
-    user wifi
-    group wifi system inet net_admin
-    capabilities NET_ADMIN
-    oneshot
-
-service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
-    user root
-    group root
-    disabled
-    oneshot
-
-service wifi_ftmd /system/vendor/bin/wifi_ftmd
-    user system
-    group system inet net_admin
-    socket wififtmd_server dgram 0660 system system
-    disabled
-    oneshot
-
-on property:vendor.wifi.ftmd.load=true
-    insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
 
 service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
     class late_start
@@ -548,41 +475,9 @@ service qcom-sh /vendor/bin/init.qcom.sh
     user root
     group root system radio
     oneshot
-# Remove since is deprecated but throws AVC denial.
-# service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-#    class late_start
-#    user root
-#    oneshot
-
-service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
-    class late_start
-    user root
-    group root system wakelock graphics
-    disabled
-    oneshot
-
-service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
-    class late_start
-    group wifi inet
-    disabled
-    oneshot
-
-service wifi-crda /vendor/bin/init.crda.sh
-   class late_start
-   user root
-   disabled
-   oneshot
-
-on property:sys.boot_completed=1
-    start qcom-post-boot
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
-
-service qvop-daemon /vendor/bin/qvop-daemon
-    class late_start
-    user system
-    group system drmrpc
 
 service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/global
     class main
@@ -591,11 +486,6 @@ service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/glob
     group wifi
     disabled
     oneshot
-
-service battery_monitor /system/bin/battery_monitor
-    user system
-    group system
-    disabled
 
 service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
     class main
@@ -611,101 +501,14 @@ service vendor.ril-daemon3 /vendor/bin/hw/rild -c 3
     group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
-service profiler_daemon /system/bin/profiler_daemon
-    class late_start
-    user root
-    group root
-    disabled
-
-service vendor.ssr_diag /system/vendor/bin/ssr_diag
-    class late_start
-    user system
-    group system
-    disabled
-
-service diag_mdlog_start /system/vendor/bin/diag_mdlog
-    class late_start
-    user shell
-    group system oem_2901 sdcard_rw sdcard_r media_rw
-    disabled
-    oneshot
-
-service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
-    class late_start
-    user shell
-    group system oem_2901 sdcard_rw sdcard_r media_rw
-    disabled
-    oneshot
-
-service qlogd /system/xbin/qlogd
-    socket qlogd stream 0662 system system
-    class main
-    disabled
-on property:persist.sys.qlogd=1
-    start qlogd
-on property:persist.sys.qlogd=0
-    stop qlogd
-
-service vm_bms /vendor/bin/vm_bms
-    user root
-    group root
-    disabled
-
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
     class core
     user root
     group root
     disabled
 
-service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_little_big.conf
-    class core
-    user root
-    group root
-    disabled
-
-service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_sdm630.conf
-    class core
-    user root
-    group root
-    disabled
-
-# service for USERDEBUG
-service vendor.LKCore-dbg /vendor/bin/LKCore
-    class late_start
-    oneshot
-    disabled
-    user root
-    group root system log diag net_raw
-
-# service for USER
-service vendor.LKCore-rel /vendor/bin/LKCore
-    class late_start
-    oneshot
-    disabled
-    user system
-    group system log diag
-
-service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
-    class late_start
-    user system
-    group system
-
-service esepmdaemon /system/vendor/bin/esepmdaemon
-    class core
-    user system
-    group nfc
-
-on property:init.svc.vendor.charger=running
+on charger
     setprop persist.sys.usb.config mass_storage
-    start qcom-post-boot
-
-#add poweroffhandler
-service poweroffhandler /system/vendor/bin/poweroffhandler
-    class core
-    user media
-    group graphics audio
-    disabled
-    oneshot
 
 service time_daemon /vendor/bin/time_daemon
     class main
@@ -726,29 +529,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     disabled
     oneshot
 
-service vendor.hbtp /vendor/bin/hbtp_daemon
-     class main
-     user system
-     group system
-     capabilities SYS_NICE
-     disabled
-
-service chre /vendor/bin/chre
-    class late_start
-    user system
-    group system
-    socket chre seqpacket 0660 root system
-    shutdown critical
-
-on property:vendor.chre.enabled=0
-   stop chre
-
-service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
-    class main
-    disabled
-    oneshot
-    keycodes 114 115 116
-
 #Set GPU Opengles version
 on property:vendor.opengles.version=*
     setprop ro.opengles.version ${vendor.opengles.version}
@@ -756,14 +536,3 @@ on property:vendor.opengles.version=*
 #Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
-
-service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
-    override
-    class hal
-    user audioserver
-    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
-    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
-    capabilities BLOCK_SUSPEND SYS_NICE
-    ioprio rt 4
-    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
-    onrestart restart audioserver
