@@ -147,12 +147,6 @@ on charger
     setprop sys.usb.configfs 1
     write /sys/kernel/cnss/charger_mode 1
 
-#service vendor.lowi /vendor/bin/sscrpcd
-#   class core
-#   user system
-#   group system wakelock
-#   capabilities BLOCK_SUSPEND
-
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
@@ -171,10 +165,6 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     user system
     group system
     disabled
-
-service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
-    class core
-    oneshot
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
