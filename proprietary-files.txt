@@ -422,28 +422,28 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics - Adreno
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
-vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
-vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libkcl.so
-vendor/lib64/libkernelmanager.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libllvm-qgl.so
+# Graphics - Adreno - from ingot-user 14 UKQ1.240227.155 155 release-keys
+vendor/lib64/egl/eglSubDriverAndroid.so|167c573149e046b23280cba9f778861f5f6a5a0c
+vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|579730142b5d41bd890530861cb8efdeef4b83e9
+vendor/lib64/egl/libGLESv1_CM_adreno.so|29a64765d2b5d35261ec98ed68031d5699954307
+vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|72959bfb0103ceec93cf50742f68f7852c3e73c9
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|8cabc64180cd040214cce0a7e56f2b9564546f47
+vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|7b1bca9132cb906613aac175b2fa9cc3eda3a55f
+vendor/lib64/egl/libq3dtools_esx.so|9d02514642d565007412a68321c02a5f1e4ffc8a
+vendor/lib64/libCB.so|4de816fc15ecab03fb37f0ba69a35effeef5a911
+vendor/lib64/libOpenCL.so|454b8aaada3a5c449ae90e2232eb761e743fda06
+vendor/lib64/libadreno_app_profiles.so|17963b645b7dede58329875bb55e33e393810067
+vendor/lib64/libadreno_utils.so|92b91c6d2ddad887b6edd70cd9a7a7435cf4b211
+vendor/lib64/libgpudataproducer.so|f0f196b3fbbad871b009c79c85f3d4c369afed9b
+vendor/lib64/libgsl.so|bd5ecffcd8f01223f1c31078706599a72472b266
+vendor/lib64/libkcl.so|3fea6b981eae84506511a85a7aee7dd641c81ded
+vendor/lib64/libkernelmanager.so|b23807b755bff9adb34793ab71b78cf061772e64
+vendor/lib64/libllvm-glnext.so|a8ba67b4ea293652580db9f08e43e4e928985f03
+vendor/lib64/libllvm-qcom.so|210fdef3513ca2dc022e54b50779c0024a6c6730
+vendor/lib64/libllvm-qgl.so|b6de0d3a492cf845aa12a0abb39089b815589c96
 
-# Graphics (Vulkan)
-vendor/lib64/hw/vulkan.adreno.so
+# Graphics (Vulkan) - from ingot-user 14 UKQ1.240227.155 155 release-keys
+vendor/lib64/hw/vulkan.adreno.so|542ef720eb111db3066f6013706d7f6b61d1d894
 
 # GNSS - from ingot-user 14 UKQ1.240227.155 155 release-keys
 vendor/app/CACertService/CACertService.apk|ea18679b8a6cdf4f9f00b7fb5d7a86e12be38f23
