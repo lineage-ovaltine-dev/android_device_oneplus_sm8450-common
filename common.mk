@@ -43,6 +43,9 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default:64 \
     audio.usb.default:64 \
     audioadsprpcd \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     libagm_compress_plugin:64 \
     libagm_mixer_plugin:64 \
     libagm_pcm_plugin:64 \
@@ -53,12 +56,9 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle:64 \
     libqcomvisualizer:64 \
     libqcomvoiceprocessing:64 \
-    libsndcardparser:64 \
-    libtinycompress:64 \
     libvolumelistener:64 \
     sound_trigger.primary.taro:64 \
-    vendor.qti.hardware.AGMIPC@1.0-service \
-    vendor.qti.hardware.pal@1.0-impl:64
+    vendor.qti.hardware.AGMIPC@1.0-service
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal
 QCV_FAMILY_SKUS := taro cape
