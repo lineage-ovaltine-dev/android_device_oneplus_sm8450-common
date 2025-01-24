@@ -21,7 +21,6 @@ from extract_utils.main import (
 namespace_imports = [
     'device/oneplus/sm8450-common',
     'hardware/qcom-caf/sm8450',
-    'hardware/qcom-caf/sm8450/audio/agm/ipc/HwBinders/legacy',
     'hardware/qcom-caf/wlan',
     'hardware/oplus',
     'vendor/qcom/opensource/commonsys/display',
@@ -59,9 +58,14 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.imsrtpservice@3.1',
     ): lib_fixup_vendor_suffix,
     (
-        'libagmclient',
+        'libar-pal',
+        'libar-acdb',
+        'liblx-osal',
+        'libats',
+        'libagm',
         'libpalclient',
         'libwpa_client',
+        'libqsap_sdk',
     ): lib_fixup_remove,
 }
 
