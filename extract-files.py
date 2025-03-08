@@ -64,7 +64,6 @@ lib_fixups: lib_fixups_user_type = {
         'libats',
         'libagm',
         'libpalclient',
-        'libwpa_client',
         'libqsap_sdk',
     ): lib_fixup_remove,
 }
