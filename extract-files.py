@@ -87,6 +87,9 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'qti.sensor.wise_light', b'android.sensor.light\x00')
         .sig_replace('F1 E9 D3 84 52 49 3F A0 72', 'F1 A9 00 80 52 09 00 A0 72'),
     ## from sm8550
+    'odm/bin/hw/vendor-oplus-hardware-performance-V1-service': blob_fixup()
+        .add_needed('libbase_shim.so')
+        .add_needed('libprocessgroup_shim.so'),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
