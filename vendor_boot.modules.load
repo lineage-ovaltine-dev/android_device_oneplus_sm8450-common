@@ -17,7 +17,6 @@ cfg80211.ko
 clk-dummy.ko
 clk-qcom.ko
 cmd-db.ko
-cqhci.ko
 crypto-qti-common.ko
 crypto-qti-hwkm.ko
 dcvs_fp.ko
