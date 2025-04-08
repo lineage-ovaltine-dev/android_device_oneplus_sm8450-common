@@ -188,7 +188,6 @@ qnoc-parrot.ko
 slimbus.ko
 slim-qcom-ngd-ctrl.ko
 hwmon.ko
-qti_amoled_ecm.ko
 snd-usb-audio-qmi.ko
 qrtr-smd.ko
 qrtr-mhi.ko
