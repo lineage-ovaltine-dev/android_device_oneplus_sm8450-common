@@ -17,7 +17,6 @@ cfg80211.ko
 clk-dummy.ko
 clk-qcom.ko
 cmd-db.ko
-cqhci.ko
 crypto-qti-common.ko
 crypto-qti-hwkm.ko
 dcvs_fp.ko
@@ -258,7 +257,6 @@ btpower.ko
 bt_fm_slim.ko
 qcom_edac.ko
 qcom_lpm.ko
-sdhci-msm.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
 leds-qpnp-vibrator-ldo.ko
