@@ -377,7 +377,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oplus
+    vendor.lineage.touch-service.oplus
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -427,8 +427,7 @@ DEVICE_MANIFEST_FILE := \
     $(LOCAL_PATH)/manifest_taro.xml
 
 ODM_MANIFEST_FILES := \
-    $(LOCAL_PATH)/manifest_dsds.xml \
-    $(LOCAL_PATH)/manifest_lineage.xml
+    $(LOCAL_PATH)/manifest_dsds.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
