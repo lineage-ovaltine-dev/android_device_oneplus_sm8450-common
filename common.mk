@@ -109,8 +109,6 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot.sh \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.composer-service.rc \
-    vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.display.demura-service
 
 PRODUCT_COPY_FILES += \
@@ -138,8 +136,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
-
-$(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
 
 # GPS
 PRODUCT_PACKAGES += \
