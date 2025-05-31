@@ -410,6 +410,20 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    hardware/oplus/vintf/device_framework_matrix.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(LOCAL_PATH)/framework_manifest.xml
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := \
+    $(LOCAL_PATH)/manifest_taro.xml
+
+ODM_MANIFEST_FILES := \
+    $(LOCAL_PATH)/manifest_dsds.xml \
+    $(LOCAL_PATH)/manifest_lineage.xml
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
