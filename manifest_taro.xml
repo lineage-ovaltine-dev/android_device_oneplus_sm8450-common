@@ -128,15 +128,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.esepowermanager</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IEsePowerManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.AGMIPC</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -313,15 +304,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.sensorscalibrate</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISensorsCalibrate</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.soter</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -345,15 +327,6 @@
         <interface>
             <name>ITuiComm</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wifi.wifilearner</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IWifiStats</name>
-            <instance>wifiStats</instance>
         </interface>
     </hal>
     <hal format="hidl">
