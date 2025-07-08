@@ -112,7 +112,6 @@ odm/lib64/libdlbpreg_sp.so
 odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so
 
 # Audio-libraries
-odm/lib64/libtfa98xx.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libbundlewrapper.so
