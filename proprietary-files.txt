@@ -761,10 +761,10 @@ system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so|15a47e8d6f3746e3cb3baa9157
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so|ffccfde321f48e390c5af8d546e1c7cdf23f9152
 
 # QCC - vendor - from ingot-user 14 UKQ1.240227.155 155 release-keys
-vendor/bin/qcc-trd|715e9e0362b2af05cdb869c93378e1178627f25d
+vendor/bin/qcc-trd|146a8d4ba56aebee8056f988159358943dc148c9|698da506a789666d3e0fde9bbd7f8af90c246844
 vendor/etc/init/init.qdmastats.rc|d7ddb87faaedd900f1756064fe756d50efed7ca9
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|459d506b20124520f5d650a7b30c9a490514a878
-vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so|5b658d590f94cde9acb71ff47d2b5c5e9566152d
+vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so|e0363df07498ac7f3beb9e6f017d79e2bbc53c9c|deef616f1a0fb091dbd553d807c097a7989f49fd
 vendor/lib64/libqcc_file_agent.so|2062da8684a791c3c8afe57f8be3d2b010337a8a
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor|ef866bab2186db1b2c09477e36fef20945fa671e
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=_vendor|0677ebfe099cdaa6c3776d0bd5318044a4220918
