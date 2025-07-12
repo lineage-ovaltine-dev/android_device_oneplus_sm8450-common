@@ -1,8 +1,10 @@
 #
-# Copyright (C) 2022-2024 The LineageOS Project
+# Copyright (C) 2022-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+import /odm/etc/init/hw/init.oplus.display.rc
 
 on fs
     # Update touchpanel firmware in case we ship newer firmware in /odm
@@ -27,61 +29,13 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys10/restart_level RELATED
 
 on boot
-    # Display
-    chown system system /sys/kernel/oplus_display/dump_info
-    chown system system /sys/kernel/oplus_display/seed
-    chown system system /sys/kernel/oplus_display/panel_pwr
-    chown system system /dev/oplus_display
-    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
-    chown system system /sys/kernel/oplus_display/ffl_set
-    chown system system /sys/kernel/oplus_display/force_screenfp
-    chown system system /sys/kernel/oplus_display/notify_fppress
-    chown system system /sys/kernel/oplus_display/aod_light_mode_set
-    chown system system /sys/kernel/oplus_display/power_status
-    chown system system /sys/kernel/oplus_display/sau_closebl_node
-    chown system system /sys/kernel/oplus_display/esd_status
-    chown system system /sys/kernel/oplus_display/spr
-    chown system system /sys/kernel/oplus_display/write_panel_reg
-    chown system system /sys/kernel/oplus_display/max_brightness
-    chown system system /sys/kernel/oplus_display/dynamic_osc_clock
-
     chmod 0000 /sys/kernel/oplus_display/hbm
-
-    # Sensors
-    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
-
-    # TOF
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/alg_setting
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_apply_fac_calib
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_clk_iterations
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_clk_trim_set
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_get_distance
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_get_fac_calib
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/app0_read_peak_crosstalk
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/capture
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/iterations
-    chown cameraserver cameraserver /sys/kernel/tof_control/app0/period
-    chown cameraserver cameraserver /sys/kernel/tof_control/chip_enable
-    chown cameraserver cameraserver /sys/kernel/tof_control/driver_debug
 
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
 
 on property:sys.boot_completed=1
-    # Display
-    copy /vendor/etc/Oplus_QC_LTM_SM8450_2021_10_12.pfm /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM8450_2021_10_12.pfm
-    copy /vendor/etc/Oplus_QC_LTM_SM8475_2022_07_05.pfm /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM8475_2022_07_05.pfm
-    copy /vendor/etc/Oplus_QC_LTM_SM8475_2022_05_10.pfm /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM8475_2022_05_10.pfm
-    copy /vendor/etc/Oplus_QC_LTM_SM7475_2023_02_01.pfm /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM7475_2023_02_01.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM8450_2021_10_12.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM8475_2022_07_05.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM8475_2022_05_10.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/Oplus_QC_LTM_SM7475_2023_02_01.pfm
-
-    # Widevine
-    copy /vendor/etc/oplus_Widevine_licenses.pfm /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
 
     # ZRAM
     swapon_all /vendor/etc/fstab.zram
@@ -96,10 +50,4 @@ on property:vendor.post_boot.parsed=1
 service oplus-sh /odm/bin/init.oplus.sh
     user root
     group root
-    oneshot
-
-service oplus_sensor_fb /odm/bin/oplus_sensor_fb
-    user system
-    group system
-    class late_start
     oneshot
