@@ -643,14 +643,10 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Oplus Osense
-odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
-
 # Oplus performance
 odm/bin/hw/vendor-oplus-hardware-performance-V1-service
 odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
 odm/etc/vintf/manifest/manifest_performance_aidl.xml
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service
@@ -810,7 +806,6 @@ odm/lib64/libcommcenterutils.so
 odm/lib64/libdmtp-protos-lite.so
 odm/lib64/libdmtpclient.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
-odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 
