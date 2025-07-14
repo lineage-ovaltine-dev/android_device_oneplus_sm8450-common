@@ -643,10 +643,12 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Oplus performance
-odm/bin/hw/vendor-oplus-hardware-performance-V1-service
-odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
-odm/etc/vintf/manifest/manifest_performance_aidl.xml
+# Oplus performance - from salami
+odm/bin/hw/vendor-oplus-hardware-performance-V1-service|fe0a47428fcec95000e060dfbd68e8a8b46b431d|fe0a47428fcec95000e060dfbd68e8a8b46b431d
+odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc|2e6a643c5859e0691eb78ec58e8b4834bc9c765c
+odm/etc/vintf/manifest/manifest_performance_aidl.xml|01929a42b66b9e809d1ec1f55c8f943542ef23d5
+odm/lib64/vendor.oplus.hardware.performance-V1-ndk.so|ac54ffc4d69d713aa2ac443caf473197705e50d8
+odm/lib64/vendor.oplus.hardware.performance-V2-ndk.so|1a2a09b12d7e70b18bbd7b9f8a1692503ac3986d
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service
