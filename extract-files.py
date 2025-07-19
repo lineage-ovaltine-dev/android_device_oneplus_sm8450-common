@@ -86,7 +86,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libgrpc++_unsecure_prebuilt.so': blob_fixup()
         .fix_soname(),
     'vendor/lib64/libqcrilNr.so': blob_fixup()
-        .replace_needed('vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so','vendor.oplus.hardware.communicationcenter-V2-ndk_platform.so'),
+        .replace_needed('vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so','vendor.oplus.hardware.communicationcenter-V2-ndk_platform.so')
+        .replace_needed('vendor.oplus.hardware.radio-V2-ndk_platform.so', 'vendor.oplus.hardware.radio-V2-ndk.so'),
     ## from sm8550
     'odm/bin/hw/vendor-oplus-hardware-performance-V1-service': blob_fixup()
         .add_needed('libbase_shim.so')

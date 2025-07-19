@@ -927,7 +927,6 @@ vendor/lib64/qtiwakelock.so
 vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.ims-V1-ndk_platform.so
-vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.connectionfactory-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.dataactivity-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.ka-V1-ndk_platform.so
