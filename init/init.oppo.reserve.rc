@@ -30,7 +30,6 @@ on post-fs-data
   mkdir /mnt/vendor/oplusreserve/media
   chown system system /mnt/vendor/oplusreserve/media
   chmod 0771 /mnt/vendor/oplusreserve/media
-# mount sdcardfs /dev/block/bootdevice/by-name/mnt/vendor/opporeserve2 /mnt/vendor/opporeserve/media reserved_mb=24
   mkdir /mnt/vendor/oplusreserve/media/dropbox
   chown system system /mnt/vendor/oplusreserve/media/dropbox
   chmod 0771 /mnt/vendor/oplusreserve/media/dropbox
@@ -58,23 +57,9 @@ on post-fs-data
   mkdir /mnt/vendor/oplusreserve/media/engineermode
   chown system system /mnt/vendor/oplusreserve/media/engineermode
   chmod 0771 /mnt/vendor/oplusreserve/media/engineermode
-  mkdir /mnt/vendor/oplusreserve/media/ColorOS
-  chown system system /mnt/vendor/oplusreserve/media/ColorOS
-  chmod 0771 /mnt/vendor/oplusreserve/media/ColorOS
   mkdir /mnt/vendor/oplusreserve/media/Camera
   chown system system /mnt/vendor/oplusreserve/media/Camera
   chmod 0771 /mnt/vendor/oplusreserve/media/Camera
-
-  mkdir /mnt/vendor/oplusreserve/media/ColorOS/HeytapID
-  chown system system /mnt/vendor/oplusreserve/media/ColorOS/HeytapID
-  chmod 0771 /mnt/vendor/oplusreserve/media/ColorOS/HeytapID
-
-##ifdef OPLUS_FEATURE_TOOLS
-  #Zhuan.Pan@BSP.Tool, Add for mount stamp.db
-  mkdir /mnt/vendor/oplusreserve/media/log/stamp
-  chmod 0771 /mnt/vendor/oplusreserve/media/log/stamp
-  chown system system /mnt/vendor/oplusreserve/media/log/stamp
-##endif OPLUS_FEATURE_TOOLS
 
 #ifdef OPLUS_FEATURE_SHUTDOWN_DETECT
 #Bin.Xu@BSP.kernel.Stability, 2020/4/28, add for shutdown_detect
@@ -82,19 +67,6 @@ on post-fs-data
   chown system system /mnt/vendor/oplusreserve/media/log/shutdown
   chmod 0771 /mnt/vendor/oplusreserve/media/log/shutdown
 #endif
-
-#ifdef OPLUS_FEATURE_PHOENIX
-  mkdir /mnt/vendor/oplusreserve/media/log/hang_oplus 0771 system system
-  mkdir /mnt/vendor/oplusreserve/media/log/boot_log 0771 system system
-  mkdir /mnt/vendor/oplusreserve/rbr_log 0771 system system
-#endif
-
-#ifdef OPLUS_FEATURE_MINIDUMP
-  mkdir /mnt/vendor/oplusreserve/media/log/minidump
-  chmod 0771 /mnt/vendor/oplusreserve/media/log/minidump
-  chown system system /mnt/vendor/oplusreserve/media/log/minidump
-#endif
-
   restorecon_recursive /mnt/vendor/oplusreserve
 
 #jay.huang@imaging 2020/11/24 add permision for ams-tof and ois
@@ -130,28 +102,6 @@ on post-fs-data
 #remove retry probe file
     rm /data/vendor/camera_update/retryProbe
 
-##ifdef 
-#wenjie.Liu@CN.NFC.Basic.Felica.1334855,add for: Felica Nvram store in opporeserve
-  mkdir /mnt/vendor/oplusreserve/media/nfclock 0771
-  chown system system /mnt/vendor/oplusreserve/media/nfclock
-  mkdir /mnt/vendor/oplusreserve/connectivity 0771
-  chown nfc system /mnt/vendor/oplusreserve/connectivity
-  mkdir /mnt/vendor/oplusreserve/connectivity/felicalock 0771
-  chown nfc system /mnt/vendor/oplusreserve/connectivity/felicalock
-##endif 
-
-#wudi@BSP.Power.Framework, 2020/12/17, add for MIDAS
-  chown system system /dev/binder_stats
-  chmod 0660 /dev/binder_stat
-
-#fangxiang@BSP.Power.Framework, 2020/12/17, add for MIDAS
-  chown system system /dev/midas_dev
-  chmod 0660 /dev/midas_dev
-
 #jay.huang@imaging 2022/07/14 for camera cpuset
 on post-fs-data
     chmod 666 /dev/cpuset/background/cpus
-
-#ziyu@BSP.Power.Framework, 2023/1/17, add for MIDAS
-  chown system system /proc/task_overload/abnormal_task
-  chmod 0660 /proc/task_overload/abnormal_task
