@@ -38,6 +38,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus.display.rc",
+    src: "init.oplus.display.rc",
+    sub_dir: "init/hw",
+    device_specific: true,
+}
+
+prebuilt_etc {
     name: "init.oppo.reserve.rc",
     src: "init.oppo.reserve.rc",
     sub_dir: "init",
