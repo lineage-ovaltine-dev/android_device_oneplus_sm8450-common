@@ -85,8 +85,6 @@ oplus_bsp_fw_update.ko
 hdcp.ko
 qseecom-mod.ko
 cs_press_f71.ko
-aw8697.ko
-haptic.ko
 qcom-i2c-pmic.ko
 sg.ko
 spi-msm-geni.ko
