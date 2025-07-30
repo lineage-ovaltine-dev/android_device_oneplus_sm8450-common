@@ -25,7 +25,7 @@ void OverrideProperty(char const prop[], char const value[]) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void load_props(int i, int j) {
+void load_props(int i) {
     const auto OverrideRoProperty = [](const char* source, const char* prop, const char* value,
                                        bool product) {
         std::string PropertyName = "ro.";
@@ -62,22 +62,10 @@ void vendor_load_properties() {
             break;
         // ovaltine
         case 21841:  // CN - ACE Pro
-            load_props(4, 0);
+            load_props(4);
             break;
         case 21842:  // IN / EEA / NA - 10T
-            switch (region) {
-                case 1:  // IN
-                    load_props(0, 1);
-                    break;
-                case 2:  // EEA
-                    load_props(1, 1);
-                    break;
-                case 3:  // NA
-                    load_props(2, 1);
-                    break;
-                default:
-                    LOG(ERROR) << "Unexpected project name: " << prjname;
-            }
+            load_props(region - 1);
             break;
         default:
             LOG(ERROR) << "Unexpected project name: " << prjname;
