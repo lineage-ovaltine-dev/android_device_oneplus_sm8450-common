@@ -162,7 +162,6 @@ qbt_handler.ko
 qcom_soc_wdt.ko
 sys_pm_vx.ko
 msm_ext_display.ko
-icnss2.ko
 plh_scmi.ko
 gplaf_scmi.ko
 shared_rail_scmi.ko
@@ -172,9 +171,6 @@ qcom_logbuf_vendor_hooks.ko
 panel_event_notifier.ko
 qcom_sync_file.ko
 qfprom-sys.ko
-oplus_sensor.ko
-ssc_interact.ko
-oplus_bsp_sensor_feedback.ko
 boot_mode.ko
 qcom_pm8008-regulator.ko
 qpnp-amoled-regulator.ko
@@ -191,12 +187,6 @@ cs_press_f71.ko
 qcom-i2c-pmic.ko
 sg.ko
 spi-msm-geni.ko
-cnss2.ko
-cnss_utils.ko
-wlan_firmware_service.ko
-cnss_plat_ipc_qmi_svc.ko
-cnss_nl.ko
-cnss_prealloc.ko
 ax88179_178a.ko
 msm_sharedmem.ko
 phy-qcom-emu.ko
@@ -224,10 +214,6 @@ oplus_bsp_tp_notify.ko
 oplus_bsp_tp_tcm_S3910.ko
 oplus_bsp_tp_syna_comnon.ko
 pm8941-pwrkey.ko
-qcom-hv-haptics.ko
-oplus_fp_common.ko
-gf_qcom.ko
-uff_fp_driver.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko
 qcom_ipc_lite.ko
@@ -250,8 +236,6 @@ ddr_cdev.ko
 qti_userspace_cdev.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
-btpower.ko
-bt_fm_slim.ko
 qcom_edac.ko
 qcom_lpm.ko
 leds-qti-flash.ko
@@ -271,8 +255,6 @@ mhi_dev_drv.ko
 mhi_dev_net.ko
 qcom_pil_info.ko
 rproc_qcom_common.ko
-qcom_q6v5.ko
-qcom_q6v5_pas.ko
 qcom_spss.ko
 qcom_esoc.ko
 qcom_sysmon.ko
@@ -290,7 +272,6 @@ qnoc-parrot.ko
 slimbus.ko
 slim-qcom-ngd-ctrl.ko
 hwmon.ko
-snd-usb-audio-qmi.ko
 qrtr-smd.ko
 qrtr-mhi.ko
 qrtr-gunyah.ko
