@@ -186,6 +186,7 @@ slimbus.ko
 slim-qcom-ngd-ctrl.ko
 hwmon.ko
 snd-usb-audio-qmi.ko
+msm_drm.ko
 qrtr-smd.ko
 qrtr-mhi.ko
 qrtr-gunyah.ko
@@ -223,7 +224,6 @@ wcd937x_slave_dlkm.ko
 hdmi_dlkm.ko
 tfa98xx-v6_dlkm.ko
 audio_extend_dlkm.ko
-sia9175_dlkm.ko
 msm-cvp.ko
 camera.ko
 gsim.ko
@@ -240,7 +240,6 @@ rmnet_aps.ko
 rmnet_sch.ko
 rmnet_core.ko
 rmnet_ctl.ko
-msm_drm.ko
 msm-eva.ko
 msm-mmrm.ko
 msm_video.ko

@@ -267,6 +267,8 @@ gh_mem_notifier.ko
 gh_virtio_backend.ko
 qcom-spmi-adc5.ko
 qcom-vadc-common.ko
+msm-mmrm.ko
+msm_drm.ko
 nvmem_qfprom.ko
 qnoc-parrot.ko
 slimbus.ko
@@ -275,5 +277,3 @@ hwmon.ko
 qrtr-smd.ko
 qrtr-mhi.ko
 qrtr-gunyah.ko
-msm_drm.ko
-msm-mmrm.ko
