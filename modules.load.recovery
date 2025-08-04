@@ -153,7 +153,6 @@ msm_performance.ko
 qpnp-pbs.ko
 spcom.ko
 cdsprm.ko
-fsa4480-i2c.ko
 msm_show_epoch.ko
 eud.ko
 guestvm_loader.ko
@@ -180,14 +179,12 @@ frpc-adsprpc.ko
 rdbg.ko
 lt9611uxc.ko
 msm_kgsl.ko
-oplus_bsp_fw_update.ko
 hdcp.ko
 qseecom-mod.ko
 cs_press_f71.ko
 qcom-i2c-pmic.ko
 sg.ko
 spi-msm-geni.ko
-ax88179_178a.ko
 msm_sharedmem.ko
 phy-qcom-emu.ko
 phy-msm-ssusb-qmp.ko
@@ -195,7 +192,6 @@ phy-msm-snps-hs.ko
 phy-msm-snps-eusb2.ko
 dwc3-msm.ko
 ehset.ko
-lvstest.ko
 redriver.ko
 nb7vpq904m.ko
 usb_f_diag.ko
@@ -238,10 +234,6 @@ qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
 qcom_edac.ko
 qcom_lpm.ko
-leds-qti-flash.ko
-leds-qti-tri-led.ko
-leds-qpnp-vibrator-ldo.ko
-leds_aw210xx.ko
 plh_vendor.ko
 gplaf_vendor.ko
 shared_rail_vendor.ko
