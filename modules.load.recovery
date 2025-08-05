@@ -1,4 +1,3 @@
-gh_virt_wdt.ko
 qcom_wdt_core.ko
 qcom_cpu_vendor_hooks.ko
 clk-rpmh.ko
@@ -25,12 +24,6 @@ dispcc-diwali.ko
 dispcc-waipio.ko
 gcc-diwali.ko
 gdsc-regulator.ko
-gh_arm_drv.ko
-gh_ctrl.ko
-gh_dbl.ko
-gh_msgq.ko
-gh_rm_drv.ko
-gh_virt_wdt.ko
 hwkm.ko
 icc-bcm-voter.ko
 icc-debug.ko
@@ -70,7 +63,6 @@ spmi-pmic-arb.ko
 qcom-reboot-reason.ko
 qcom_rpmh.ko
 qcom-scm.ko
-qcom_wdt_core.ko
 qnoc-diwali.ko
 qnoc-qos.ko
 qrtr.ko
@@ -173,7 +165,6 @@ qfprom-sys.ko
 boot_mode.ko
 qcom_pm8008-regulator.ko
 qpnp-amoled-regulator.ko
-hvc_gunyah.ko
 msm_rng.ko
 frpc-adsprpc.ko
 rdbg.ko
@@ -254,9 +245,6 @@ qcom_glink.ko
 qcom_glink_smem.ko
 qcom_glink_spss.ko
 qcom_smd.ko
-gh_irq_lend.ko
-gh_mem_notifier.ko
-gh_virtio_backend.ko
 qcom-spmi-adc5.ko
 qcom-vadc-common.ko
 msm-mmrm.ko
@@ -268,4 +256,3 @@ slim-qcom-ngd-ctrl.ko
 hwmon.ko
 qrtr-smd.ko
 qrtr-mhi.ko
-qrtr-gunyah.ko
