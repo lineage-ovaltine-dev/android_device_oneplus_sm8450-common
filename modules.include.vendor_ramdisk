@@ -189,3 +189,5 @@ snd-usb-audio-qmi.ko
 qrtr-smd.ko
 qrtr-mhi.ko
 qrtr-gunyah.ko
+oplus_phoenix.ko
+oplus_kmsg_wb.ko

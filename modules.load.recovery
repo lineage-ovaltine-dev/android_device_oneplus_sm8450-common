@@ -82,6 +82,8 @@ qcom_aoss.ko
 msm_qmp.ko
 simcardnum.ko
 oplus_project.ko
+oplus_phoenix.ko
+oplus_kmsg_wb.ko
 qpnp-power-on.ko
 qcom_rimps.ko
 c1dcvs_vendor.ko

@@ -73,6 +73,8 @@ oplus_sensor.ko
 ssc_interact.ko
 oplus_bsp_sensor_feedback.ko
 boot_mode.ko
+oplus_phoenix.ko
+oplus_kmsg_wb.ko
 qcom_pm8008-regulator.ko
 qpnp-amoled-regulator.ko
 hvc_gunyah.ko
