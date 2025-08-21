@@ -101,8 +101,8 @@ static const struct effect_stream effects[] = {
         {
                 /* CLICK */
                 .effect_id = 0,
-                .data = effect_0,
-                .length = ARRAY_SIZE(effect_0),
+                .data = effect_2,
+                .length = ARRAY_SIZE(effect_2),
                 .play_rate_hz = 24000,
         },
 
