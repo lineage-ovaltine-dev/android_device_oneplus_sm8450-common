@@ -43,7 +43,6 @@ lib_fixups: lib_fixups_user_type = {
     (
         'vendor.oplus.hardware.cammidasservice-V1-ndk',
         'vendor.oplus.hardware.communicationcenter-V1-ndk',
-        'vendor.oplus.hardware.performance-V1-ndk',
         'vendor.oplus.hardware.sendextcamcmd-V1-ndk',
         'vendor.oplus.hardware.stability.oplus_project-V1-ndk',
         'vendor.qti.hardware.qccsyshal@1.0',
@@ -86,10 +85,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so','vendor.oplus.hardware.communicationcenter-V2-ndk_platform.so')
         .replace_needed('vendor.oplus.hardware.radio-V2-ndk_platform.so', 'vendor.oplus.hardware.radio-V2-ndk.so'),
     ## from sm8550
-    'odm/bin/hw/vendor-oplus-hardware-performance-V1-service': blob_fixup()
-        .add_needed('libbase_shim.so')
-        .add_needed('libprocessgroup_shim.so')
-        .replace_needed('vendor.oplus.hardware.performance-V1-ndk_platform.so', 'vendor.oplus.hardware.performance-V1-ndk.so'),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
