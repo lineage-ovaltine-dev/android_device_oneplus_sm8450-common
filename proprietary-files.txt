@@ -9,15 +9,15 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/bin/dspservice
-vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/etc/models/acd/event.eai
-vendor/etc/models/acd/music.eai
-vendor/etc/models/acd/speech.eai
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+# ADSP - from ingot user 14 UKQ1.240227.155 155 release-keys
+vendor/bin/adsprpcd|4821003d01528b1fb5b7b409cd80e4307129ec9d
+vendor/bin/dspservice|a054e25f1e5b52db6b031ba59117a0ad65252e35
+vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc|8f0eb84d3eb5fc0f683ef7b975b75044d56f513e
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/models/acd/event.eai|9bf278d152e0c722ab9bcb11c19568c5ae3212c5
+vendor/etc/models/acd/music.eai|4eeea06fd59b0a600216c62241a313efe92df7fc
+vendor/etc/models/acd/speech.eai|aff5a8f19d803478415eb65c52249950fd0a2fae
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
@@ -160,13 +160,12 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # Camera
 system/lib64/libziparchive.so:odm/lib64/libziparchive_odm.so;FIX_SONAME
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+# CDSP - from ingot user 14 UKQ1.240227.155 155 release-keys
+vendor/bin/cdsprpcd|8c50020fda4d4217fd85ea0df98c55237c275ff2
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|782794d5568711f61e0a9d478b38b4bfb9729726
+vendor/lib64/libcdsp_default_listener.so|b6a4f036f9f9d7a60216211225b15fe5ab9add46
+vendor/lib64/libcdsprpc.so|c6dddb277b05435f3e1f2fd72309a0a3a0af4d79
+vendor/lib64/libsdsprpc.so|ef4c395886369ef047b6b70edb0ea02e93d88cd7
 
 # Charger
 vendor/etc/charger_fw_fstab.qti
