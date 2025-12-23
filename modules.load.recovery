@@ -81,9 +81,7 @@ mem-offline.ko
 qcom_aoss.ko
 msm_qmp.ko
 simcardnum.ko
-oplus_project.ko
-oplus_phoenix.ko
-oplus_kmsg_wb.ko
+oplus_bsp_boot_projectinfo.ko
 qpnp-power-on.ko
 qcom_rimps.ko
 c1dcvs_vendor.ko
@@ -174,7 +172,7 @@ lt9611uxc.ko
 msm_kgsl.ko
 hdcp.ko
 qseecom-mod.ko
-cs_press_f71.ko
+oplus_bsp_cs_press_f71.ko
 qcom-i2c-pmic.ko
 sg.ko
 spi-msm-geni.ko
@@ -198,10 +196,10 @@ rt-regmap.ko
 repeater.ko
 repeater-i2c-eusb2.ko
 oplus_bsp_tp_custom.ko
-oplus_bsp_tp_comon.ko
+oplus_bsp_tp_common.ko
 oplus_bsp_tp_notify.ko
 oplus_bsp_tp_tcm_S3910.ko
-oplus_bsp_tp_syna_comnon.ko
+oplus_bsp_tp_syna_common.ko
 pm8941-pwrkey.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko

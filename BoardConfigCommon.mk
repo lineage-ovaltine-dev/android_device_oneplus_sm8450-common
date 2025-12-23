@@ -118,6 +118,19 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/video-driver \
 	qcom/opensource/wlan/qcacld-3.0/.qca6490
 
+TARGET_KERNEL_EXT_MODULES += \
+    oplus/kernel/cpu/thermal:kbuild \
+    oplus/kernel/device_info/cs_press:kbuild \
+    oplus/kernel/dfr:kbuild \
+    oplus/kernel/network/oplus_network_oem_qmi:kbuild \
+    oplus/kernel/network/oplus_network_sim_detect:kbuild \
+    oplus/kernel/network/oplus_rf_cable_monitor:kbuild \
+    oplus/kernel/touchpanel/oplus_touchscreen_v2/touch_custom:kbuild \
+    oplus/kernel/touchpanel/oplus_touchscreen_v2:kbuild \
+    oplus/secure/biometrics/fingerprints/bsp/uff/driver:kbuild \
+    oplus/secure/common/bsp/drivers/oplus_secure_common \
+    oplus/sensor/kernel/qcom/sensor:kbuild
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := taro

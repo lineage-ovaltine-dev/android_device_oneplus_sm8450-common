@@ -39,7 +39,6 @@ smcinvoke_mod.ko
 microdump_collector.ko
 llcc_perfmon.ko
 smp2p_sleepstate.ko
-sensors_ssc.ko
 glink_pkt.ko
 glink_probe.ko
 pmic_glink.ko
@@ -69,9 +68,9 @@ qcom_logbuf_vendor_hooks.ko
 panel_event_notifier.ko
 qcom_sync_file.ko
 qfprom-sys.ko
-oplus_sensor.ko
-ssc_interact.ko
-oplus_bsp_sensor_feedback.ko
+oplus_sensor_interact.ko
+sensors_ssc.ko
+oplus_sensor_feedback.ko
 boot_mode.ko
 qcom_pm8008-regulator.ko
 qpnp-amoled-regulator.ko
@@ -84,7 +83,7 @@ msm_kgsl.ko
 oplus_bsp_fw_update.ko
 hdcp.ko
 qseecom-mod.ko
-cs_press_f71.ko
+oplus_bsp_cs_press_f71.ko
 qcom-i2c-pmic.ko
 sg.ko
 spi-msm-geni.ko
@@ -114,15 +113,13 @@ rt-regmap.ko
 repeater.ko
 repeater-i2c-eusb2.ko
 oplus_bsp_tp_custom.ko
-oplus_bsp_tp_comon.ko
+oplus_bsp_tp_common.ko
 oplus_bsp_tp_notify.ko
 oplus_bsp_tp_tcm_S3910.ko
-oplus_bsp_tp_syna_comnon.ko
+oplus_bsp_tp_syna_common.ko
 pm8941-pwrkey.ko
 qcom-hv-haptics.ko
-oplus_fp_common.ko
-gf_qcom.ko
-uff_fp_driver.ko
+oplus_bsp_uff_fp_driver.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko
 qcom_ipc_lite.ko
@@ -189,5 +186,3 @@ snd-usb-audio-qmi.ko
 qrtr-smd.ko
 qrtr-mhi.ko
 qrtr-gunyah.ko
-oplus_phoenix.ko
-oplus_kmsg_wb.ko
