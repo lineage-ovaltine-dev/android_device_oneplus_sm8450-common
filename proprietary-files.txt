@@ -1073,6 +1073,15 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
+# Touch - from dodge 11.F.80
+odm/bin/hw/vendor-oplus-hardware-touch-V2-service|87cad8a76386446100bec20e91d62b4e0cc17f9d
+odm/bin/touchDaemon|4f726568021559a9df10aff717324255b8907df0
+odm/etc/init/init.touchDaemon.rc|ddee903c9d324c0a74cbde2b1a669c1d715a8ea2
+odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc|4f5aeae41c029835e747efa365f65466ed53e595
+odm/etc/vintf/manifest/manifest_touch_aidl.xml|533fa17a03339bb0ddb42029e20fd9b20e530101
+odm/lib64/libtensorflowlite_oplus.so|63e4202be5edb8eae61dbc6958e3e1127996d903
+odm/lib64/libolc_vnd.so|ab94af1844957f761b410a767a605ba24c89bc8c
+
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
