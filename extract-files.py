@@ -71,7 +71,14 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libqcrilNr.so': blob_fixup()
         .replace_needed('vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so','vendor.oplus.hardware.communicationcenter-V2-ndk_platform.so')
         .replace_needed('vendor.oplus.hardware.radio-V2-ndk_platform.so', 'vendor.oplus.hardware.radio-V2-ndk.so'),
+    'odm/lib64/libGaiaClient_vnd.so': blob_fixup()
+        .replace_needed('vendor.oplus.hardware.olc2-V1-ndk_platform.so', 'vendor.oplus.hardware.olc2-V3-ndk.so'),
+    'odm/bin/hw/vendor.oplus.hardware.charger-V10-service': blob_fixup()
+        .replace_needed('vendor.oplus.hardware.charger-V10-ndk_platform.so', 'vendor.oplus.hardware.charger-V10-ndk.so')
+        .replace_needed('vendor.oplus.hardware.osense.client-V1-ndk_platform.so', 'vendor.oplus.hardware.osense.client-V1-ndk.so'),
     ## from sm8550
+    'system_ext/lib64/libwfdnative.so': blob_fixup()
+        .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()

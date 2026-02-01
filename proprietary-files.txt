@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 10T (CPH2415_11_H.82).
+## are from OnePlus 10 Pro (NE2211_11_J.91).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
@@ -170,14 +170,14 @@ vendor/lib64/libsdsprpc.so|ef4c395886369ef047b6b70edb0ea02e93d88cd7
 # Charger config
 vendor/etc/charger_fw_fstab.qti
 
-# Charger - from dodge 11.F.80
-odm/bin/hw/gauged|06e1e042b1ecaa3b9c2434688223167d4ee63a51
-odm/bin/hw/vendor.oplus.hardware.charger-V9-service|7e073f6ef7f7a072f7266253352b76d8afa3053b
-odm/bin/hw/wlschgd|1b91b4627ec6c5e1246fcce06fec9a89c0905d38
-odm/etc/init/vendor.oplus.hardware.charger-V9-service.rc|4b0cf5fae55abd3955e291426f1c1c4e69996da2
-odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml|1cd08ef77673326f25e201819125e274681f5512
+# Charger
+odm/bin/hw/gauged
+odm/bin/hw/vendor.oplus.hardware.charger-V10-service
+odm/bin/hw/wlschgd
+odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc
+odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/firmware/fastchg/charge_time_config.csv|f74d05d46dd9579ea7d169be66f4e8196bbf7a82
-odm/lib64/libGaiaClient_vnd.so|09a2f838f8888cc1f57611ff5f8e07022e12e615
+odm/lib64/libGaiaClient_vnd.so
 
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
@@ -451,7 +451,6 @@ system_ext/etc/init/horae.rc|fc8b2a0becf5d9cec527df7c6974ff77de80f3a2
 
 # IMS (system)
 system/lib64/vendor.qti.diaghal-V1-ndk.so:system_ext/lib64/vendor.qti.diaghal-V1-ndk.so
-system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/framework/qcrilhook.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
@@ -476,10 +475,10 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
 system_ext/priv-app/ims/ims.apk
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
@@ -636,9 +635,6 @@ vendor/lib64/libvideotxr.so
 vendor/etc/public.libraries.txt
 
 # Neural networks
-odm/lib64/QNN_lib/libQnnHtp.so
-odm/lib64/QNN_lib/libQnnHtpPrepare.so
-odm/lib64/QNN_lib/libQnnHtpV69Stub.so
 odm/lib64/aiboost/libQnnHtp.so;MODULE_SUFFIX=.aiboost
 odm/lib64/aiboost/libQnnHtpPrepare.so;MODULE_SUFFIX=.aiboost
 odm/lib64/aiboost/libQnnHtpV69Stub.so;MODULE_SUFFIX=.aiboost
@@ -830,11 +826,12 @@ odm/lib64/libradioapis.so
 odm/lib64/librfapis.so
 odm/lib64/libsubsys-service.so
 odm/lib64/libsubsys-utils.so
+odm/lib64/libvasapi.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
-odm/lib64/vendor.oplus.hardware.subsys_radio-V4-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.subsys-V3-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.subsys-V5-ndk_platform.so
 
 # RIL (system)
 system_ext/etc/permissions/qcrilhook.xml
